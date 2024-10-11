@@ -1,5 +1,3 @@
-
-
 # Kalkulasi Pemilihan Komponen 
 # Rincian Biaya
 
