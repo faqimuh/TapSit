@@ -16,3 +16,4 @@
 | 9   | Battery              | 3      | 4.000  | 12.000  | Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|
 |     | **TOTAL**           |        |        | 298.060 | 
 
+
