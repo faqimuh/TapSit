@@ -31,15 +31,20 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 # Software
 # Hasil Produk
 # Rincian Biaya
-| No  | Item              | Jumlah | Harga  | Total   |
-|-----|-------------------|--------|--------|---------|
-| 1   | ESP32 Devkitc 32D   | 3      | 66.900 | 200.700 |
-| 2   | Buzzer             | 2      | 5.000  | 10.000  |
-| 3   | LED SMD 1206       | 4      | 140    | 560     |
-| 4   | RFID MRFC 522      | 2      | 14.000 | 28.000  |
-| 5   | Resistor SMD 1206  | 6      | 150    | 900     |
-| 6   | Papan PCB          | 3      | 5.900  | 17.700  |
-| 7   | Box Electric       | 3      | 5.800  | 17.400  |
-| 8   | Spacer             | 12     | 900    | 10.800  |
-|     | **TOTAL**          |        |        | 286.060 |
+
+| No  | Item                | Jumlah | Harga per Unit   | Total | Alasan Pemilihan |link pembelian |
+|-----|---------------------|--------|--------|---------|-------------------------|-----------------|
+| 1   | ESP32 Devkitc 32D   | 3      | 66.900 | 200.700 | Harga terjangkau, fitur lengkap (I/O pins, Wi-Fi,Bluetooth), serta konsumsi daya yang efisien| beli disini https://s.shopee.co.id/g7zNegvfe |
+| 2   | Buzzer              | 2      | 5.000  | 10.000  |Harga terjangkau, kompatibilitas, ketersediaan | beli disini https://www.tokopedia.com/marnov/buzzer-smd-8530-3v-16r-8-5-3mm-piezo-mini-aktif-pasif?extParamsrc%3Dshop%26whid%3D225282|
+| 3   | LED SMD 1206        | 4      | 140    | 560     |efisiensi energi |beli disini https://tokopedia.link/4pipX6fPrNb|
+| 4   | RFID MRFC 522       | 2      | 14.000 | 28.000  |Pengingat suara, ukuran kecil, biaya rendah | beli disini https://s.shopee.co.id/sIaWPa9R|
+| 5   | Resistor SMD 1206   | 6      | 150    | 900     |Ukurannya kecil, hemat tempat pada PCB | beli disini https://tokopedia.link/CMivhgmPrNb|
+| 6   | Papan PCB           | 3      | 5.900  | 17.700  |Struktur stabil, kemudahan desain | beli disini https://s.shopee.co.id/5fWfL0X3Ry|
+| 7   | Box Electric        | 3      | 5.800  | 17.400  |Keamanan, desain rapi | beli disini https://s.shopee.co.id/8UqqiG7ziS |
+| 8   | Spacer              | 12     | 900    | 10.800  |Dukungan fisik, mencegah hubungan pendek | beli disini https://s.shopee.co.id/4fe89O4weo|
+| 9   | Battery             | 3      | 4.000  | 12.000  |Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|beli disini https://www.tokopedia.com/isee/tp4056-1a-5v-lithium-lipo-18650-battery-charging-usb-type-c-proteksi|
+|     | **TOTAL**           |        |        | 298.060 | 
+
+
+
 

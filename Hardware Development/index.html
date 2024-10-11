@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulasi Pemilihan Komponen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h2, h3 {
+      color: #2e2e2e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2e2e2e;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+      background-color: #2e2e2e;
+      color: white;
+    }
+
+    .total-cell {
+      text-align: left;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Kalkulasi Pemilihan Komponen</h2>
+<h3>Rincian Biaya</h3>
+
+<table class="rincian-biaya">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Item</th>
+      <th>Jumlah</th>
+      <th>Harga per Unit</th>
+      <th>Total</th>
+      <th>Alasan Pemilihan</th>
+      <th>Link Pembelian</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ESP32 Devkitc 32D</td>
+      <td>3</td>
+      <td>66.900</td>
+      <td>200.700</td>
+      <td>Harga terjangkau, fitur lengkap (I/O pins, Wi-Fi, Bluetooth), serta konsumsi daya yang efisien</td>
+      <td><a href="https://s.shopee.co.id/g7zNegvfe">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Buzzer</td>
+      <td>2</td>
+      <td>5.000</td>
+      <td>10.000</td>
+      <td>Harga terjangkau, kompatibilitas, ketersediaan</td>
+      <td><a href=https://www.tokopedia.com/marnov/buzzer-smd-8530-3v-16r-8-5-3mm-piezo-mini-aktif-pasif?extParamsrc%3Dshop%26whid%3D225282>Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>LED SMD 1206</td>
+      <td>4</td>
+      <td>140</td>
+      <td>560</td>
+      <td>Efisiensi energi</td>
+      <td><a href="https://tokopedia.link/4pipX6fPrNb">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>RFID MRFC 522</td>
+      <td>2</td>
+      <td>14.000</td>
+      <td>28.000</td>
+      <td>Pengingat suara, ukuran kecil, biaya rendah</td>
+      <td><a href="https://s.shopee.co.id/sIaWPa9R">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Resistor SMD 1206</td>
+      <td>6</td>
+      <td>150</td>
+      <td>900</td>
+      <td>Ukurannya kecil, hemat tempat pada PCB</td>
+      <td><a href="https://tokopedia.link/CMivhgmPrNb">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Papan PCB</td>
+      <td>3</td>
+      <td>5.900</td>
+      <td>17.700</td>
+      <td>Struktur stabil, kemudahan desain</td>
+      <td><a href="https://s.shopee.co.id/5fWfL0X3Ry">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Box Electric</td>
+      <td>3</td>
+      <td>5.800</td>
+      <td>17.400</td>
+      <td>Keamanan, desain rapi</td>
+      <td><a href="https://s.shopee.co.id/8UqqiG7ziS">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Spacer</td>
+      <td>12</td>
+      <td>900</td>
+      <td>10.800</td>
+      <td>Dukungan fisik, mencegah hubungan pendek</td>
+      <td><a href="https://s.shopee.co.id/4fe89O4weo">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Battery</td>
+      <td>3</td>
+      <td>4.000</td>
+      <td>12.000</td>
+      <td>Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali</td>
+      <td><a href="https://www.tokopedia.com/isee/tp4056-1a-5v-lithium-lipo-18650-battery-charging-usb-type-c-proteksi">Beli di sini</a></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="total">TOTAL</td>
+      <td colspan="3" class="total-cell">298.060</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
