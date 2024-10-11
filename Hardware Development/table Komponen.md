@@ -14,5 +14,5 @@
 | 7   | Box Electric        | 3      | 5.800  | 17.400  |Keamanan, desain rapi |
 | 8   | Spacer              | 12     | 900    | 10.800  |Dukungan fisik, mencegah hubungan pendek |
 | 9   | Batery              | 3      | 4.000  | 12.000  | Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|
-|     | **TOTAL**           |        |        | 294.060 | 
+|     | **TOTAL**           |        |        | 298.060 | 
 
