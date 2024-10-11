@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perbandingan dan Pemilihan Komponen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #2e2e2e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      padding: 8px;
+      text-align: left; /* Default text alignment */
+    }
+
+    th {
+      background-color: #2e2e2e;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .calculation {
+      text-align: center;
+      white-space: pre-line;
+      margin: 10px 0; /* Jarak atas dan bawah 1.5 */
+    }
+
+    .centered {
+      text-align: center; /* Centered text for - entries */
+    }
+  </style>
+</head>
+<body>
+
+<h2>Perbandingan Komponen dan Perhitungan</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Komponen</th>
+      <th>Alternatif</th>
+      <th>Fitur Utama</th>
+      <th>Keunggulan</th>
+      <th>Alasan Pemilihan</th>
+      <th>Perhitungan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ESP32 DevkitC 32D</td>
+      <td>ESP8266</td>
+      <td>Wi-Fi, Bluetooth</td>
+      <td>Konsumsi daya rendah, fitur lengkap</td>
+      <td>ESP32 dipilih karena memiliki Bluetooth dan lebih banyak GPIO (34 pin), sedangkan ESP8266 hanya mendukung Wi-Fi tanpa Bluetooth dan memiliki GPIO yang lebih sedikit. ESP32 lebih fleksibel untuk aplikasi IoT dengan kebutuhan komunikasi yang lebih kompleks.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Buzzer</td>
+      <td>Piezo Speaker</td>
+      <td>Indikasi suara</td>
+      <td>Biaya murah, mudah diimplementasi</td>
+      <td>Buzzer dipilih karena lebih murah dan sudah cukup untuk memberikan umpan balik suara sederhana, sedangkan piezo speaker lebih mahal dan tidak diperlukan untuk fungsi dasar ini.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>LED SMD 1206</td>
+      <td>LED 5mm</td>
+      <td>Efisiensi energi, ukuran kecil</td>
+      <td>Konsumsi daya rendah</td>
+      <td>LED SMD dipilih karena ukurannya lebih kecil dan lebih efisien dibanding LED 5mm, sehingga lebih cocok untuk aplikasi hemat energi.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>RFID MRFC 522</td>
+      <td>PN532 RFID</td>
+      <td>Komunikasi RFID 13.56 MHz</td>
+      <td>Biaya rendah, ukuran kecil</td>
+      <td>MRFC 522 dipilih karena lebih ekonomis dan cukup untuk aplikasi sederhana, sementara PN532 memiliki fitur tambahan yang tidak diperlukan dan harganya lebih tinggi.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Resistor SMD 1206</td>
+      <td>Resistor Through Hole</td>
+      <td>Komponen pasif</td>
+      <td>Ukuran kecil, stabilitas tinggi</td>
+      <td>Resistor SMD dipilih karena lebih kecil dan sesuai untuk produksi PCB, hemat tempat pada PCB, sementara resistor through-hole lebih besar dan kurang efisien untuk aplikasi modern yang memerlukan desain kompleks.</td>
+      <td class="calculation">
+        <strong>Pembagi Tegangan:</strong> 
+        <br>𝑉𝑜𝑢𝑡 = 𝑉𝑖𝑛 × 𝑅2 / (𝑅1 + 𝑅2)
+        <br>Diketahui: 𝑉𝑖𝑛 = 12V, 𝑉𝑜𝑢𝑡 = 3V, 𝑅1 = 10KΩ 
+        <br>𝑅2 = (𝑉𝑜𝑢𝑡 × 𝑅1) / (𝑉𝑖𝑛 − 𝑉𝑜𝑢𝑡)
+        <br>𝑅2 = (3V × 10KΩ) / (12V − 3V) = 3.33KΩ
+        <br><strong>Hasil:</strong> Untuk mendapatkan tegangan output 3V dari sumber 12V, dengan R1 = 10KΩ, diperlukan R2 = 3.33KΩ.
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Papan PCB</td>
+      <td>Veroboard</td>
+      <td>Desain rangkaian tetap</td>
+      <td>Struktur stabil</td>
+      <td>Papan PCB dipilih untuk instalasi permanen yang lebih rapi dan stabil, sedangkan Veroboard lebih cocok untuk prototyping tetapi kurang stabil untuk aplikasi jangka panjang.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Box Electric</td>
+      <td>Kotak Plastik</td>
+      <td>Penyimpanan komponen elektronik</td>
+      <td>Melindungi dari debu dan air</td>
+      <td>Box electric dipilih karena memberikan perlindungan lebih baik terhadap debu dan air dibandingkan kotak plastik biasa, yang lebih rentan.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Spacer</td>
+      <td>Bantalan Plastik</td>
+      <td>Penopang fisik</td>
+      <td>Stabilitas mekanis</td>
+      <td>Spacer dipilih untuk memberikan jarak fisik yang lebih stabil antara PCB dan box dibandingkan bantalan plastik yang kurang kokoh.</td>
+      <td class="centered">-</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Modul Battery Li-ion</td>
+      <td>NiMH Rechargeable</td>
+      <td>Rechargeable, kapasitas tinggi</td>
+      <td>Ringan, efisiensi daya tinggi</td>
+      <td>Li-ion dipilih karena kapasitas lebih tinggi, lebih ringan, dan efisien dibandingkan NiMH, yang lebih berat dan kurang efisien untuk aplikasi yang memerlukan daya tinggi.</td>
+      <td class="calculation">
+        <strong>Perhitungan Kapasitas Baterai:</strong>
+        <br>Kapasitas Baterai = Arus Beban × Waktu Pemakaian<br>
+         Kapasitas = 200 mA × 12 jam = 2400 mAh <br><br>
+        <strong>Waktu Pengisian Baterai:</strong>
+        <br>Waktu Pengisian = Kapasitas Baterai / Arus Pengisian<br>
+         Waktu = 3000 mAh / 1000 mA × 1/0.8 = 3.75 jam<br><br>
+        <strong>Perkiraan Lama Pemakaian:</strong><br>
+         Lama Pemakaian = Kapasitas Baterai / Arus Beban
+        <br>Lama = 3000 mAh / 200 mA = 15 jam
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
