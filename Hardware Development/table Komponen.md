@@ -1,9 +1,9 @@
 # Kalkulasi Pemilihan Komponen 
 # Rincian Biaya
 
-| No  | Item                | Jumlah | Harga per Unit   | Total |Alasan Pemilihan |
-|-----|-------------------  |--------|--------|---------|-----|
-| 1   | ESP32 Devkitc 32D   | 3      | 66.900 | 200.700 | Harga terjangkau, fitur lengkap (I/O pins, Wi-Fi, Bluetooth), serta konsumsi daya yang efisien|
+| No  | Item                | Jumlah | Harga per Unit   | Total | Alasan Pemilihan |
+|-----|-------------------  |--------|--------|---------|-------------------------|
+| 1   | ESP32 Devkitc 32D   | 3      | 66.900 | 200.700 | Harga terjangkau, fitur lengkap (I/O pins, Wi-Fi,Bluetooth), serta konsumsi daya yang efisien|
 | 2   | Buzzer              | 2      | 5.000  | 10.000  |Harga terjangkau, kompatibilitas, ketersediaan |
 | 3   | LED SMD 1206        | 4      | 140    | 560     |efisiensi energi |
 | 4   | RFID MRFC 522       | 2      | 14.000 | 28.000  |Pengingat suara, ukuran kecil, biaya rendah |
