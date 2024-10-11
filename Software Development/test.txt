@@ -1,1 +1,2 @@
-contoh
+:wq
+test coba
