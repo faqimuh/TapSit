@@ -11,7 +11,7 @@
 | 6   | Papan PCB           | 3      | 5.900  | 17.700  |Struktur stabil, kemudahan desain |
 | 7   | Box Electric        | 3      | 5.800  | 17.400  |Keamanan, desain rapi |
 | 8   | Spacer              | 12     | 900    | 10.800  |Dukungan fisik, mencegah hubungan pendek |
-| 9   | Battery             | 3      | 4.000  | 12.000 | Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|
+| 9   | Battery             | 3      | 4.000  | 12.000  |Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|
 |     | **TOTAL**           |        |        | 298.060 | 
 
 
