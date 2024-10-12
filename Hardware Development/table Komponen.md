@@ -1,17 +1,15 @@
-# Kalkulasi Pemilihan Komponen 
-# Rincian Biaya
+# Perbandingan Komponen dan Perhitungan
 
-| No  | Item                | Jumlah | Harga per Unit   | Total | Alasan Pemilihan |link pembelian |
-|-----|-------------------  |--------|--------|---------|-------------------------|-----------------|
-| 1   | ESP32 Devkitc 32D   | 3      | 66.900 | 200.700 | Harga terjangkau, fitur lengkap (I/O pins, Wi-Fi,Bluetooth), serta konsumsi daya yang efisien| | "https://s.shopee.co.id/g7zNegvfe ">beli disini |
-| 2   | Buzzer              | 2      | 5.000  | 10.000  |Harga terjangkau, kompatibilitas, ketersediaan | |
-| 3   | LED SMD 1206        | 4      | 140    | 560     |efisiensi energi |
-| 4   | RFID MRFC 522       | 2      | 14.000 | 28.000  |Pengingat suara, ukuran kecil, biaya rendah |
-| 5   | Resistor SMD 1206   | 6      | 150    | 900     |Ukurannya kecil, hemat tempat pada PCB |
-| 6   | Papan PCB           | 3      | 5.900  | 17.700  |Struktur stabil, kemudahan desain |
-| 7   | Box Electric        | 3      | 5.800  | 17.400  |Keamanan, desain rapi |
-| 8   | Spacer              | 12     | 900    | 10.800  |Dukungan fisik, mencegah hubungan pendek |
-| 9   | Battery             | 3      | 4.000  | 12.000  |Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|
-|     | **TOTAL**           |        |        | 298.060 | 
+| No  | Komponen            | Artenatif | Fitur utama   | keunggulan | Alasan Pemilihan |Perhitungan |
+|-----|-------------------  |-----------|--------|---------|-------------------------|-----------------|
+| 1   | ESP32 Devkitc 32D   |ESP8266|Wi-Fi, Bluetooth|Konsumsi daya rendah, fitur lengkap|ESP32 dipilih karena memiliki fitur lengkap (I/O pins, Wi-Fi, Bluetooth), serta konsumsi daya dan lebih banyak GPIO (34 pin), sedangkan ESP8266 hanya mendukung Wi-Fi tanpa Bluetooth dan memiliki GPIO yang lebih sedikit. ESP32 lebih fleksibel untuk aplikasi IoT dengan kebutuhan komunikasi yang lebih kompleks.|-|
+| 2   | Buzzer              |Piezo Speaker|Indikasi suara|Biaya murah, mudah diimplementasi|Buzzer dipilih karena lebih murah dan sudah cukup untuk memberikan umpan balik suara sederhana, sedangkan piezo speaker lebih mahal dan tidak diperlukan untuk fungsi dasar ini.|-|
+| 3   | LED SMD 1206        |LED 5mm|Efisiensi energi, ukuran kecil|Konsumsi daya rendah|LED SMD dipilih karena ukurannya lebih kecil dan lebih efisien dibanding LED 5mm, sehingga lebih cocok untuk aplikasi hemat energi.|-|
+| 4   | RFID MRFC 522 |PN532 RFID|Komunikasi RFID 13.56 MHz|Biaya rendah, ukuran kecil|MRFC 522 dipilih karena lebih ekonomis dan cukup untuk aplikasi sederhana, sementara PN532 memiliki fitur tambahan yang tidak diperlukan dan harganya lebih tinggi.|-|
+| 5   | Resistor SMD 1206   |Resistor Through Hole|	Komponen pasif|Ukuran kecil, stabilitas tingg|Resistor SMD dipilih karena lebih kecil dan sesuai untuk produksi PCB, hemat tempat pada PCB, sementara resistor through-hole lebih besar dan kurang efisien untuk aplikasi modern yang memerlukan desain kompleks.|Pembagi Tegangan: 𝑉𝑜𝑢𝑡 = 𝑉𝑖𝑛 × 𝑅2 / (𝑅1 + 𝑅2) Diketahui: 𝑉𝑖𝑛 = 12V, 𝑉𝑜𝑢𝑡 = 3V, 𝑅1 = 10KΩ 𝑅2 = (𝑉𝑜𝑢𝑡 × 𝑅1) / (𝑉𝑖𝑛 − 𝑉𝑜𝑢𝑡) 𝑅2 = (3V × 10KΩ) / (12V − 3V) = 3.33KΩ Hasil: Untuk mendapatkan tegangan output 3V dari sumber 12V, dengan R1 = 10KΩ, diperlukan R2 = 3.33KΩ.|
+| 6   |Papan PCB|Veroboard|Desain rangkaian tetap|Struktur stabil|Papan PCB dipilih untuk instalasi permanen yang lebih rapi dan stabil, sedangkan Veroboard lebih cocok untuk prototyping tetapi kurang stabil untuk aplikasi jangka panjang.|-|
+| 7   |Box 3D Print|Kotak Plastik|Penyimpanan komponen elektronik|Melindungi dari debu dan air|Box electric dipilih karena memberikan perlindungan lebih baik terhadap debu dan air dibandingkan kotak plastik biasa, yang lebih rentan.|-|
+| 8   |Spacer|Bantalan Plastik|Penopang fisik|Stabilitas mekanis|Spacer dipilih untuk memberikan jarak fisik yang lebih stabil antara PCB dan box dibandingkan bantalan plastik yang kurang kokoh.|-|
+| 9   |Modul Battery Li-ion|NiMH Rechargeable|Rechargeable, kapasitas tinggi|Ringan, efisiensi daya tinggi|Li-ion dipilih karena kapasitas lebih tinggi, lebih ringan, dan efisien dibandingkan NiMH, yang lebih berat dan kurang efisien untuk aplikasi yang memerlukan daya tinggi.|Perhitungan Kapasitas Baterai: Kapasitas Baterai = Arus Beban × Waktu Pemakaian Kapasitas = 200 mA × 12 jam = 2400 mAh Waktu Pengisian Baterai: Waktu Pengisian = Kapasitas Baterai / Arus Pengisian Waktu = 3000 mAh / 1000 mA × 1/0.8 = 3.75 jam Perkiraan Lama Pemakaian: Lama Pemakaian = Kapasitas Baterai / Arus Beban Lama = 3000 mAh / 200 mA = 15 jam|
 
 
