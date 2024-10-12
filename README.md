@@ -31,7 +31,6 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 # Software
 # Hasil Produk
 # Rincian Biaya
-<<<<<<< HEAD
 
 | No  | Item                | Jumlah | Harga per Unit   | Total | Alasan Pemilihan |link pembelian |
 |-----|---------------------|--------|--------|---------|-------------------------|-----------------|
@@ -43,22 +42,6 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 | 6   | Papan PCB           | 3      | 5.900  | 17.700  |Struktur stabil, kemudahan desain | beli disini https://s.shopee.co.id/5fWfL0X3Ry|
 | 7   | Box 3D Print        | 3      | 20.000  | 60.000  |Keamanan, desain rapi | |
 | 8   | Spacer              | 12     | 900    | 10.800  |Dukungan fisik, mencegah hubungan pendek | beli disini https://s.shopee.co.id/4fe89O4weo|
-| 9   | Battery             | 3      | 4.000  | 12.000  |Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|beli disini https://www.tokopedia.com/isee/tp4056-1a-5v-lithium-lipo-18650-battery-charging-usb-type-c-proteksi|
-|     | **TOTAL**           |        |        | 298.060 | 
-
-
-
-=======
-| No  | Item              | Jumlah | Harga  | Total   |
-|-----|-------------------|--------|--------|---------|
-| 1   | ESP32 Devkitc 32D   | 3      | 66.900 | 200.700 |
-| 2   | Buzzer             | 2      | 5.000  | 10.000  |
-| 3   | LED SMD 1206       | 4      | 140    | 560     |
-| 4   | RFID MRFC 522      | 2      | 14.000 | 28.000  |
-| 5   | Resistor SMD 1206  | 6      | 150    | 900     |
-| 6   | Papan PCB          | 3      | 5.900  | 17.700  |
-| 7   | Box Electric       | 3      | 5.800  | 17.400  |
-| 8   | Spacer             | 12     | 900    | 10.800  |
-|     | **TOTAL**          |        |        | 286.060 |
->>>>>>> ba3302fef0e1ab78fb360f299956c2c8bed402bf
-
+| 9   | Modul Battery TP4056 1A 5V Lithium  | 3      | 4.000  | 12.000  |Ringan, kapasitas tinggi, dapat diisi ulang berkali-kali|beli disini https://www.tokopedia.com/isee/tp4056-1a-5v-lithium-lipo-18650-battery-charging-usb-type-c-proteksi|
+| 10  | Battery    | 3  | 37.000 | 111.000 | Ringan, kapasitas tinggi | beli disini https://id.shp.ee/LSUCxvz |
+|     | **TOTAL**           |        |        | 469.060 | 
