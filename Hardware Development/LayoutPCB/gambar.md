@@ -3,6 +3,10 @@
   <p>DOSEN PENGAMPU : Akhmad Hendriawan ST, MT <br/> NIP. 197501272002121003</p>
 </div>
 
+<div align = center>
  <h3>TAMPILAN DESIGN PCB</h3>
 
+
 ![alt text](pcb-1.png)
+
+</div>
