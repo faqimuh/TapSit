@@ -28,6 +28,128 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 | 6  | M Lukman Al Khakim     | Mechanic, Proses Manufaktur, Pemecahan Masalah                    |
 
 # Hardware
+
+<div align = center>
+ <h2>Desain Skematik</h2>
+
+![alt text](gambarskematik-1.png)
+
+</div>
+
+<div align=center>
+<h3> Daftar pin yang digunakan </h3>
+<!-- Tabel dengan CSS di file Markdown -->
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Pin GPIO Ke- </th>
+                <th>Alasan</th>
+                <th>Fungsi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>32</td>
+                <td>Aman untuk I/O</td>
+                <td>Input info daya baterai</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>15</td>
+                <td>Aman untuk I/O</td>
+                <td>Output ke buzzer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>33</td>
+                <td>Aman untuk I/O</td>
+                <td>Output ke LED_G</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>17</td>
+                <td>Aman untuk I/O</td>
+                <td>Output ke LED_R</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>3,3V</td>
+                <td>default</td>
+                <td>Daya RFID</td>
+            </tr>
+             <tr>
+                <td>7</td>
+                <td>GND 3</td>
+                <td>default</td>
+                <td>GND RFID</td>
+            </tr>
+             <tr>
+                <td>8</td>
+                <td>5</td>
+                <td>default</td>
+                <td>Pin SDA RFID</td>
+            </tr>
+             <tr>
+                <td>9</td>
+                <td>18</td>
+                <td>default</td>
+                <td>Pin SCK RFID</td>
+            </tr>
+             <tr>
+                <td>10</td>
+                <td>23</td>
+                <td>default</td>
+                <td>Pin MOSI RFID</td>
+            </tr>
+             <tr>
+                <td>11</td>
+                <td>19</td>
+                <td>default</td>
+                <td>Pin MISO RFID</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>0</td>
+                <td>default</td>
+                <td>Pin RST RFID</td>
+            </tr>
+               <tr>
+                <td>13</td>
+                <td>Vin</td>
+                <td>default</td>
+                <td>Daya ESP32</td>
+            </tr>
+               <tr>
+                <td>14</td>
+                <td>GND1</td>
+                <td>default</td>
+                <td>G pembagi (V) dan G ESP32</td>
+            </tr>
+               <tr>
+                <td>15</td>
+                <td>GND2</td>
+                <td>default</td>
+                <td>G LED_R dan G LED_G</td>
+            </tr>
+         </tbody>
+    </table>
+
+<p>Untuk file skematik, dapat diunduh <a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">di sini</a>.</p>
+
+    
+
+<div align = center>
+ <h2>Layout PCB</h2>
+
+![alt text](pcb-1.png)
+</div>
+
+<p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
+
+<p>Untuk file PCB, dapat diunduh <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing">di sini</a>.</p>
 # Software
 # Hasil Produk
 # Rincian Biaya
@@ -44,3 +166,4 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 | 8   | TP4056 1A 5V Lithium   | 1      | 4.000   | 4.000   |
 | 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |
 |     |                        |        | **TOTAL** | 154.630 |
+
