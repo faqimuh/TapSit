@@ -16,31 +16,153 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 </div>
 
-# The Stakeholder
 
-| No | Name                   | Role                                                               |
-|----|------------------------|--------------------------------------------------------------------|
-| 1  | Muhammad Faqidin       | Project Manager                                                     |
-| 2  | Ahmad Zen Azhari       | Hardware Developer                                                  |
-| 3  | Fadlan Surya           | Software Development, Bahasa Pemrograman, Kerangka kerja, Tools   |
-| 4  | Adib Tantowi           | UI/UX Designer, Riset Pengguna, Pembuatan Prototipe, Support Hardware |
-| 5  | Rizka Sugiharto        | Data Analyst, Berpikir Kritis, Analisis Statistik                 |
-| 6  | M Lukman Al Khakim     | Mechanic, Proses Manufaktur, Pemecahan Masalah                    |
+# The Stackholder
+| No | Name               | Role                                                         |
+|----|--------------------|--------------------------------------------------------------|
+| 1  | Muhammad Faqidin    | Project Manager                                              |
+| 2  | Ahmad Zen Azhari    | Hardware Developer                                           |
+| 3  | Fadlan Surya        | Software Development, Bahasa Pemrograman, Kerangka kerja, Tools |
+| 4  | Adib Tantowi        | UI/UX Designer, Riset Pengguna, Pembuatan Prototipe, Support Hardware |
+| 5  | Rizka Sugiharto     | Data Analyst, Berpikir Kritis, Analisis Statistik            |
+| 6  | M Lukman Al Khakim  | Mechanic, Proses Manufaktur, Pemecahan Masalah               |
+
 
 # Hardware
+
+<div align = center>
+ <h2>Desain Skematik</h2>
+
+![alt text](gambarskematik.png)
+</div>
+
+<div align=center>
+<h3> Daftar pin yang digunakan </h3>
+<!-- Tabel dengan CSS di file Markdown -->
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Pin GPIO Ke- </th>
+                <th>Alasan</th>
+                <th>Fungsi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>32</td>
+                <td>Aman untuk I/O</td>
+                <td>Input info daya baterai</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>15</td>
+                <td>Aman untuk I/O</td>
+                <td>Output ke buzzer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>33</td>
+                <td>Aman untuk I/O</td>
+                <td>Output ke LED_G</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>17</td>
+                <td>Aman untuk I/O</td>
+                <td>Output ke LED_R</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>3,3V</td>
+                <td>default</td>
+                <td>Daya RFID</td>
+            </tr>
+             <tr>
+                <td>7</td>
+                <td>GND 3</td>
+                <td>default</td>
+                <td>GND RFID</td>
+            </tr>
+             <tr>
+                <td>8</td>
+                <td>5</td>
+                <td>default</td>
+                <td>Pin SDA RFID</td>
+            </tr>
+             <tr>
+                <td>9</td>
+                <td>18</td>
+                <td>default</td>
+                <td>Pin SCK RFID</td>
+            </tr>
+             <tr>
+                <td>10</td>
+                <td>23</td>
+                <td>default</td>
+                <td>Pin MOSI RFID</td>
+            </tr>
+             <tr>
+                <td>11</td>
+                <td>19</td>
+                <td>default</td>
+                <td>Pin MISO RFID</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>0</td>
+                <td>default</td>
+                <td>Pin RST RFID</td>
+            </tr>
+               <tr>
+                <td>13</td>
+                <td>Vin</td>
+                <td>default</td>
+                <td>Daya ESP32</td>
+            </tr>
+               <tr>
+                <td>14</td>
+                <td>GND1</td>
+                <td>default</td>
+                <td>G pembagi (V) dan G ESP32</td>
+            </tr>
+               <tr>
+                <td>15</td>
+                <td>GND2</td>
+                <td>default</td>
+                <td>G LED_R dan G LED_G</td>
+            </tr>
+         </tbody>
+    </table>
+
+<p>Untuk file skematik, dapat diunduh <a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">di sini</a>.</p>
+
+    
+
+<div align = center>
+ <h2>Layout PCB</h2>
+
+![alt text](pcb.png)
+</div>
+
+<p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
+
+<p>Untuk file PCB, dapat diunduh <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing">di sini</a>.</p>
+
 # Software
 # Hasil Produk
 # Rincian Biaya
+| No  | Item              | Jumlah | Harga  | Total   |
+|-----|-------------------|--------|--------|---------|
+| 1   | ESP32 Devikit 32   | 3      | 58.500 | 175.500 |
+| 2   | Buzzer             | 2      | 5.000  | 10.000  |
+| 3   | LED SMD 1206       | 4      | 140    | 560     |
+| 4   | RFID MRFC 522      | 2      | 14.000 | 28.000  |
+| 5   | Resistor SMD 1206  | 6      | 150    | 900     |
+| 6   | Papan PCB          | 3      | 5.900  | 17.700  |
+| 7   | Box Electric       | 3      | 5.800  | 17.400  |
+| 8   | Spacer             | 12     | 900    | 10.800  |
+|     | **TOTAL**          |        |        | 260.860 |
 
-| No  | Item                   | Jumlah | Harga   | Total   |
-|-----|------------------------|--------|---------|---------|
-| 1   | ESP32 Devkitc 32D      | 1      | 66.900  | 66.900  |
-| 2   | Buzzer SMD 8530 3V     | 1      | 4.000   | 4.000   |
-| 3   | LED SMD 1206           | 2      | 140     | 280     |
-| 4   | RFID MRFC 522          | 1      | 14.000  | 14.000  |
-| 5   | Resistor SMD 1206      | 3      | 150     | 450     |
-| 6   | Etching Papan PCB      | 1      | 8.000   | 8.000   |
-| 7   | 3D print casing        | 1      | 20.000  | 20.000  |
-| 8   | TP4056 1A 5V Lithium   | 1      | 4.000   | 4.000   |
-| 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |
-|     |                        |        | **TOTAL** | 154.630 |
