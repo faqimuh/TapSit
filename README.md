@@ -13,7 +13,6 @@
 <div align="justify">
 
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
-
 </div>
 
 # The Stackholder
@@ -25,8 +24,18 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 | 4  | Adib Tantowi           | UI/UX Designer                                                     |
 | 5  | Rizka Sugiharto        | Data Analyst                                                       |
 | 6  | M Lukman Al Khakim     | Procurement Product                                                |
-# Hardware
 
+
+## Daftar Isi
+- [Hardware](#Hardware)
+- [Software](#Software)
+- [Hasil Produk](#Hasil-Produk)
+- [Rincian Biaya](#Rincian-Biaya)
+
+
+
+
+## Hardware
 <div align = center>
  <h2>Desain Skematik</h2>
 <img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
@@ -146,9 +155,9 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 <p>Untuk file PCB, dapat diunduh <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing">di sini</a>.</p>
 
-# Software
-# Hasil Produk
-# Rincian Biaya
+## Software
+## Hasil Produk
+## Rincian Biaya
 
 | No  | Item                   | Jumlah | Harga   | Total   |
 |-----|------------------------|--------|---------|---------|
