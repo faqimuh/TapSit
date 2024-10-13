@@ -17,16 +17,6 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 </div>
 
 # The Stackholder
-| No | Name               | Role                                                         |
-|----|--------------------|--------------------------------------------------------------|
-| 1  | Muhammad Faqidin    | Project Manager                                              |
-| 2  | Ahmad Zen Azhari    | Hardware Developer                                           |
-| 3  | Fadlan Surya        | Software Development, Bahasa Pemrograman, Kerangka kerja, Tools |
-| 4  | Adib Tantowi        | UI/UX Designer, Riset Pengguna, Pembuatan Prototipe, Support Hardware |
-| 5  | Rizka Sugiharto     | Data Analyst, Berpikir Kritis, Analisis Statistik            |
-| 6  | M Lukman Al Khakim  | Mechanic, Proses Manufaktur, Pemecahan Masalah               |
-
-=
 | No | Name                   | Role                                                               |
 |----|------------------------|--------------------------------------------------------------------|
 | 1  | Muhammad Faqidin       | Project Manager                                                    |
@@ -161,15 +151,17 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 # Software
 # Hasil Produk
 # Rincian Biaya
-| No  | Item              | Jumlah | Harga  | Total   |
-|-----|-------------------|--------|--------|---------|
-| 1   | ESP32 Devikit 32   | 3      | 58.500 | 175.500 |
-| 2   | Buzzer             | 2      | 5.000  | 10.000  |
-| 3   | LED SMD 1206       | 4      | 140    | 560     |
-| 4   | RFID MRFC 522      | 2      | 14.000 | 28.000  |
-| 5   | Resistor SMD 1206  | 6      | 150    | 900     |
-| 6   | Papan PCB          | 3      | 5.900  | 17.700  |
-| 7   | Box Electric       | 3      | 5.800  | 17.400  |
-| 8   | Spacer             | 12     | 900    | 10.800  |
-|     | **TOTAL**          |        |        | 260.860 |
+
+| No  | Item                   | Jumlah | Harga   | Total   |
+|-----|------------------------|--------|---------|---------|
+| 1   | ESP32 Devkitc 32D      | 1      | 66.900  | 66.900  |
+| 2   | Buzzer SMD 8530 3V     | 1      | 4.000   | 4.000   |
+| 3   | LED SMD 1206           | 2      | 140     | 280     |
+| 4   | RFID MRFC 522          | 1      | 14.000  | 14.000  |
+| 5   | Resistor SMD 1206      | 3      | 150     | 450     |
+| 6   | Etching Papan PCB      | 1      | 8.000   | 8.000   |
+| 7   | 3D print casing        | 1      | 20.000  | 20.000  |
+| 8   | TP4056 1A 5V Lithium   | 1      | 4.000   | 4.000   |
+| 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |
+|     |                        |        | **TOTAL** | 154.630 |
 
