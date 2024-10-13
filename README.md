@@ -29,7 +29,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 ## Daftar Isi
 - [Hardware](#Hardware)
     * [Rangkaian Skematik](#Rangkaian-Skematik)
-    * [Pin I/O](#Pin-I/O)
+    * [Pin I/O](#Pinout)
     * [Layout PCB](#Layout-PCB)
 - [Software](#Software)
 - [Hasil Produk](#Hasil-Produk)
@@ -44,7 +44,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 <img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
 </div>
 
-  ### Pin I/O
+  ### Pinout
 <div align=center>
 <div class="table-container">
     <table>
