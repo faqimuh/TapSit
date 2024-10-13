@@ -29,8 +29,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 <div align = center>
  <h2>Desain Skematik</h2>
-
-![alt text](gambarskematik.png)
+<img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
 </div>
 
 <div align=center>
@@ -140,8 +139,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 <div align = center>
  <h2>Layout PCB</h2>
-
-![alt text](pcb.png)
+  <img src="Hardware Development/LayoutPCB/pcb.png" alt="Layout" />
 </div>
 
 <p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
