@@ -20,12 +20,12 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 | No | Name                   | Role                                                               |
 |----|------------------------|--------------------------------------------------------------------|
-| 1  | Muhammad Faqidin       | Project Manager                                                     |
-| 2  | Ahmad Zen Azhari       | Hardware Developer                                                  |
-| 3  | Fadlan Surya           | Software Development, Bahasa Pemrograman, Kerangka kerja, Tools   |
-| 4  | Adib Tantowi           | UI/UX Designer, Riset Pengguna, Pembuatan Prototipe, Support Hardware |
-| 5  | Rizka Sugiharto        | Data Analyst, Berpikir Kritis, Analisis Statistik                 |
-| 6  | M Lukman Al Khakim     | Mechanic, Proses Manufaktur, Pemecahan Masalah                    |
+| 1  | Muhammad Faqidin       | Project Manager                                                    |
+| 2  | Ahmad Zen Azhari       | Hardware Development                                               |
+| 3  | Fadlan Surya           | Software Development                                               |
+| 4  | Adib Tantowi           | UI/UX Designer                                                     |
+| 5  | Rizka Sugiharto        | Data Analyst                                                       |
+| 6  | M Lukman Al Khakim     | Procurement Product                                                |
 
 # Hardware
 # Software
