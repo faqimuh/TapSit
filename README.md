@@ -28,6 +28,9 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 ## Daftar Isi
 - [Hardware](#Hardware)
+    * [Rangkaian Skematik](#Rangkaian-Skematik)
+    * [Pin I/O](#Pin-I/O)
+    * [Layout PCB](#Layout-PCB)
 - [Software](#Software)
 - [Hasil Produk](#Hasil-Produk)
 - [Rincian Biaya](#Rincian-Biaya)
@@ -36,14 +39,13 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 
 ## Hardware
+  ### Rangkaian Skematik
 <div align = center>
- <h2>Desain Skematik</h2>
 <img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
 </div>
 
+  ### Pin I/O
 <div align=center>
-<h3> Daftar pin yang digunakan </h3>
-<!-- Tabel dengan CSS di file Markdown -->
 <div class="table-container">
     <table>
         <thead>
@@ -142,18 +144,18 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
          </tbody>
     </table>
 
-<p>Untuk file skematik, dapat diunduh <a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">di sini</a>.</p>
+<p>File Download<a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">Link</a>.</p>
 
     
 
-<div align = center>
- <h2>Layout PCB</h2>
+
+  ### Layout PCB
   <img src="Hardware Development/LayoutPCB/pcb.png" alt="Layout" />
-</div>
+
 
 <p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
 
-<p>Untuk file PCB, dapat diunduh <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing">di sini</a>.</p>
+<p>File Download  <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing"> Link </a>.</p>
 
 ## Software
 ## Hasil Produk
