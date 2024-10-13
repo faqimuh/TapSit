@@ -168,7 +168,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 | 3   | LED SMD 1206           | 2      | 140     | 280     |[Buy](https://tokopedia.link/4pipX6fPrNb)|
 | 4   | RFID MRFC 522          | 1      | 14.000  | 14.000  |[Buy](https://s.shopee.co.id/sIaWPa9R)         |
 | 5   | Resistor SMD 1206      | 3      | 150     | 450     |[Buy](https://tokopedia.link/CMivhgmPrNb)    |
-| 6   | Etching Papan PCB      | 1      | 8.000   | 8.000   |[Buy](https://s.shopee.co.id/5fWfL0X3Ry)      |
+| 6   | Etching Papan PCB      | 1      | 8.000   | 8.000   |   |
 | 7   | 3D print casing        | 1      | 20.000  | 20.000  |     |
 | 8   | TP4056 1A 5V Lithium   | 1      | 4.000   | 4.000   |[Buy](https://www.tokopedia.com/isee/tp4056-1a-5v-lithium-lipo-18650-battery-charging-usb-type-c-proteksi) |
 | 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |[Buy](https://id.shp.ee/LSUCxvz)                |
