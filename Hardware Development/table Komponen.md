@@ -13,32 +13,33 @@
 | 9   | Lithium 2500mAh 3.7V   | NiMH Rechargeable       | Kapasitas tinggi, ringan      | Daya tahan lama, efisiensi tinggi | **Baterai Lithium 2500mAh 3.7V** dipilih karena bobotnya ringan, kapasitas tinggi, dan efisiensi lebih baik. Dibandingkan NiMH, Lithium memiliki kecepatan pengisian lebih cepat, self-discharge rendah, dan lebih sesuai untuk aplikasi jangka panjang. |
 
 
-
-# Perhitungan Resistor
-Pembagi Tegangan:
-𝑉𝑜𝑢𝑡 = 𝑉𝑖𝑛 × 𝑅2 / (𝑅1 + 𝑅2)
-Diketahui:
-𝑉𝑖𝑛 = 12V
-𝑉𝑜𝑢𝑡 = 3V
-𝑅1 = 10KΩ
-𝑅2 = (𝑉𝑜𝑢𝑡 × 𝑅1) / (𝑉𝑖𝑛 − 𝑉𝑜𝑢𝑡)
-𝑅2 = (3V × 10KΩ) / (12V − 3V)
-𝑅2 = 3.33KΩ
+## Komponen
+### 1. Resistor
+Pembagi Tegangan:<br>
+𝑉𝑜𝑢𝑡 = 𝑉𝑖𝑛 × 𝑅2 / (𝑅1 + 𝑅2)<br>
+    Diketahui:<br>
+                𝑉𝑖𝑛 = 12V<br>
+                𝑉𝑜𝑢𝑡 = 3V<br>
+                𝑅1 = 10KΩ<br>
+𝑅2 = (𝑉𝑜𝑢𝑡 × 𝑅1) / (𝑉𝑖𝑛 − 𝑉𝑜𝑢𝑡)<br>
+𝑅2 = (3V × 10KΩ) / (12V − 3V)<br>
+𝑅2 = 3.33KΩ<br>
 Hasil: Untuk mendapatkan tegangan output 3V dari sumber 12V, dengan R1 = 10KΩ, diperlukan R2 = 3.33KΩ.
-# Dasar teori 
-Untuk menurunkan Tegangan, Pembagi tegangan memungkinkan penurunan tegangan dari sumber yang lebih tinggi ke nilai yang lebih rendah, sesuai dengan kebutuhan komponen di rangkaian.
-
-# Perhitungan Kapasitas Baterai:
-Diketahui:
-Arus beban = 200mA
-Waktu pemakaian = 12 jam
-Kapasitas Baterai = Arus Beban × Waktu Pemakaian
-Kapasitas = 200 mA × 12 jam = 2400 mAh
-Waktu Pengisian Baterai:
-Waktu Pengisian = Kapasitas Baterai / Arus Pengisian
-Waktu = 2500 mAh / 1000 mA × 1/0.8 = 3.125 jam
-Perkiraan Lama Pemakaian:
-Lama Pemakaian = Kapasitas Baterai / Arus Beban
-Lama = 2500 mAh / 200 mA = 12.5 jam
-# Dasar Teori
+<br>
+Note :<br>
+Untuk menurunkan Tegangan, Pembagi tegangan memungkinkan penurunan tegangan dari sumber yang lebih tinggi ke nilai yang lebih rendah, sesuai dengan kebutuhan komponen di rangkaian.<br>
+<br>
+### 2. Battery
+Diketahui:<br>
+Arus max beban = 200mA<br>
+Waktu pemakaian = 12 jam<br>
+Kapasitas Baterai = Arus Beban × Waktu Pemakaian<br>
+Kapasitas = 200 mA × 12 jam = 2400 mAh<br>
+Waktu Pengisian Baterai:<br>
+Waktu Pengisian = Kapasitas Baterai / Arus Pengisian<br>
+Waktu = 2500 mAh / 1000 mA × 1/0.8 = 3.125 jam<br>
+Perkiraan Lama Pemakaian:<br>
+Lama Pemakaian = Kapasitas Baterai / Arus Beban<br>
+Lama = 2500 mAh / 200 mA = 12.5 jam<br>
+Note :<br>
 Dengan Menggunakan baterai berkapasitas besar seperti 2500mAh atau 3000mAh juga dapat meningkatkan efisiensi pengisian. Modul pengisian seperti TP4056 akan bekerja lebih optimal ketika dipasangkan dengan baterai berkapasitas lebih besar karena pengisian akan berlangsung lebih lama pada arus yang lebih tinggi, mengurangi kerugian daya akibat pengisian berulang kali.
