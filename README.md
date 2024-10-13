@@ -16,7 +16,6 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 </div>
 
-
 # The Stackholder
 | No | Name               | Role                                                         |
 |----|--------------------|--------------------------------------------------------------|
@@ -27,7 +26,15 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 | 5  | Rizka Sugiharto     | Data Analyst, Berpikir Kritis, Analisis Statistik            |
 | 6  | M Lukman Al Khakim  | Mechanic, Proses Manufaktur, Pemecahan Masalah               |
 
-
+=
+| No | Name                   | Role                                                               |
+|----|------------------------|--------------------------------------------------------------------|
+| 1  | Muhammad Faqidin       | Project Manager                                                    |
+| 2  | Ahmad Zen Azhari       | Hardware Development                                               |
+| 3  | Fadlan Surya           | Software Development                                               |
+| 4  | Adib Tantowi           | UI/UX Designer                                                     |
+| 5  | Rizka Sugiharto        | Data Analyst                                                       |
+| 6  | M Lukman Al Khakim     | Procurement Product                                                |
 # Hardware
 
 <div align = center>
