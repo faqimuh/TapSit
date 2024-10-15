@@ -1,5 +1,4 @@
 <div align = center>
- <h3>TAMPILAN SKEMATIK</h3>
+ <h3>TAMPILAN SKEMATIK PCB</h3>
 
-
-![alt text](gambarskematik-1.png)
+![alt text](skematikk.png)
