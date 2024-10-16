@@ -13,32 +13,38 @@
 <div align="justify">
 
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
-
 </div>
 
-# The Stakeholder
-
+# The Stackholder
 | No | Name                   | Role                                                               |
 |----|------------------------|--------------------------------------------------------------------|
-| 1  | Muhammad Faqidin       | Project Manager                                                     |
-| 2  | Ahmad Zen Azhari       | Hardware Developer                                                  |
-| 3  | Fadlan Surya           | Software Development, Bahasa Pemrograman, Kerangka kerja, Tools   |
-| 4  | Adib Tantowi           | UI/UX Designer, Riset Pengguna, Pembuatan Prototipe, Support Hardware |
-| 5  | Rizka Sugiharto        | Data Analyst, Berpikir Kritis, Analisis Statistik                 |
-| 6  | M Lukman Al Khakim     | Mechanic, Proses Manufaktur, Pemecahan Masalah                    |
+| 1  | Muhammad Faqidin       | Project Manager                                                    |
+| 2  | Ahmad Zen Azhari       | Hardware Development                                               |
+| 3  | Fadlan Surya           | Software Development                                               |
+| 4  | Adib Tantowi           | UI/UX Designer                                                     |
+| 5  | Rizka Sugiharto        | Data Analyst                                                       |
+| 6  | M Lukman Al Khakim     | Procurement Product                                                |
 
-# Hardware
 
+## Daftar Isi
+- [Hardware](#Hardware)
+    * [Rangkaian Skematik](#Rangkaian-Skematik)
+    * [Pin I/O](#Pinout)
+    * [Layout PCB](#Layout-PCB)
+- [Hasil Produk](#Hasil-Produk)
+- [Rincian Biaya](#Rincian-Biaya)
+
+
+
+
+## Hardware
+  ### Rangkaian Skematik
 <div align = center>
- <h2>Desain Skematik</h2>
-
-![alt text](gambarskematik-1.png)
-
+<img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
 </div>
 
+  ### Pinout
 <div align=center>
-<h3> Daftar pin yang digunakan </h3>
-<!-- Tabel dengan CSS di file Markdown -->
 <div class="table-container">
     <table>
         <thead>
@@ -137,33 +143,32 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
          </tbody>
     </table>
 
-<p>Untuk file skematik, dapat diunduh <a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">di sini</a>.</p>
+<p>File Download<a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">Link</a>.</p>
 
     
 
-<div align = center>
- <h2>Layout PCB</h2>
 
-![alt text](pcb-1.png)
-</div>
+  ### Layout PCB
+  <img src="Hardware Development/LayoutPCB/pcb.png" alt="Layout" />
+
 
 <p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
 
-<p>Untuk file PCB, dapat diunduh <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing">di sini</a>.</p>
-# Software
-# Hasil Produk
-# Rincian Biaya
+<p>File Download  <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing"> Link </a>.</p>
 
-| No  | Item                   | Jumlah | Harga   | Total   |
-|-----|------------------------|--------|---------|---------|
-| 1   | ESP32 Devkitc 32D      | 1      | 66.900  | 66.900  |
-| 2   | Buzzer SMD 8530 3V     | 1      | 4.000   | 4.000   |
-| 3   | LED SMD 1206           | 2      | 140     | 280     |
-| 4   | RFID MRFC 522          | 1      | 14.000  | 14.000  |
-| 5   | Resistor SMD 1206      | 3      | 150     | 450     |
-| 6   | Etching Papan PCB      | 1      | 8.000   | 8.000   |
-| 7   | 3D print casing        | 1      | 20.000  | 20.000  |
-| 8   | TP4056 1A 5V Lithium   | 1      | 4.000   | 4.000   |
-| 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |
+## Hasil Produk
+## Rincian Biaya
+
+| No  | Item                   | Jumlah | Harga   | Total   |Link|
+|-----|------------------------|--------|---------|---------|-----|
+| 1   | ESP32 Devkitc 32D      | 1      | 66.900  | 66.900  |[Buy](https://s.shopee.co.id/g7zNegvfe) |
+| 2   | Buzzer SMD 8530 3V     | 1      | 4.000   | 4.000   |[Buy](https://www.tokopedia.com/marnov/buzzer-smd-8530-3v-16r-8-5-3mm-piezo-mini-aktif-pasif?extParamsrc%3Dshop%26whid%3D225282) |
+| 3   | LED SMD 1206           | 2      | 140     | 280     |[Buy](https://tokopedia.link/4pipX6fPrNb)|
+| 4   | RFID MRFC 522          | 1      | 14.000  | 14.000  |[Buy](https://s.shopee.co.id/sIaWPa9R)         |
+| 5   | Resistor SMD 1206      | 3      | 150     | 450     |[Buy](https://tokopedia.link/CMivhgmPrNb)    |
+| 6   | Etching Papan PCB      | 1      | 8.000   | 8.000   |   |
+| 7   | 3D print casing        | 1      | 20.000  | 20.000  |     |
+| 8   | TP4056 1A 5V Lithium   | 1      | 4.000   | 4.000   |[Buy](https://www.tokopedia.com/isee/tp4056-1a-5v-lithium-lipo-18650-battery-charging-usb-type-c-proteksi) |
+| 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |[Buy](https://id.shp.ee/LSUCxvz)                |
 |     |                        |        | **TOTAL** | 154.630 |
 
