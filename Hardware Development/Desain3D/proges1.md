@@ -1,15 +1,19 @@
-<div style="background-color: #2e2e2e; padding: 10px; border-radius: 5px; color: white;">
-  <h1>WORKSHOP MIKROKONTROLLER - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA</h1>
-  <p>DOSEN PENGAMPU : Akhmad Hendriawan ST, MT <br/> NIP. 197501272002121003 </br> Dibuat : Ahmad Zen Ashari </br> NRP : 2122600009 </br> Proges Pertama</p>
-</div>
- <h2> Desain 3D Komponen dan PCB</h2>
 <div align=center>
-<h3> Angle 1</h3>
+ <h1> Desain 3D Casing Komponen dan PCB</h1>
 
-![alt text](<angle 1-1.png>) 
+<h2> Tampilan Produk </h2>
 
+![alt text](AssemblyProyekIoT.png)
+
+<h2> Versi 1 Baterai </h2>
+
+![alt text](AssemblyProyekIoT1.png)
+
+![alt text](<Isi box.png>)
+
+<h2> Versi 2 Baterai </h2>
+
+![alt text](AssemblyProyekIoT2.png)
+
+![alt text](<Isi box 2.png>)
 </div>
-<div align=center>
-<h3> Angle 2 </h3>
-
- ![alt text](<angle 2-1.png>)
