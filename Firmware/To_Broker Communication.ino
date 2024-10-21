@@ -23,12 +23,16 @@ int batt = 76;
 hw_timer_t *timer = NULL;  // Timer untuk interrupt
 volatile bool timerFlag = false;
 
+
 // Fungsi interrupt untuk pengambilan sampel
 void IRAM_ATTR onTimer() {
   timerFlag = true; 
   batt++;
   snprintf(interupsi, MSG_BUFFER_SIZE, "MEJA #%ld BATTERAI #%d", value1, batt);
 }
+
+
+// Fungsi interrupt untuk pengambilan sampel
 
 // Fungsi reconnect untuk koneksi ke MQTT broker
 void reconnect() {
@@ -80,6 +84,7 @@ void setup() {
   
   // Aktifkan alarm
   timerAlarmEnable(timer);
+
 }
 
 void loop() {
@@ -91,7 +96,9 @@ void loop() {
   
   if(timerFlag){
     client.publish("outTopic", interupsi);
+
     Serial.printf("BATERAI ");
+
     Serial.println(interupsi);
     timerFlag = false;  // Reset flag
   }
@@ -105,4 +112,5 @@ void loop() {
     Serial.println(msg);
     client.publish("outTopic", msg);  // Kirim pesan ke broker MQTT
   }
+  
 }
