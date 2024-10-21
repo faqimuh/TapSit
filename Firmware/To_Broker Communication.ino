@@ -1,10 +1,9 @@
 #include <WiFi.h>
+#include <WiFiManager.h>  // Menggunakan WiFiManager untuk pengaturan WiFi
 #include <PubSubClient.h>
 #include "esp32-hal-timer.h"
 
 // Update these with values suitable for your network.
-const char* ssid = "KSH Nurul 2";
-const char* password = "Nurulhikmah3";
 const char* mqtt_server = "broker.mqtt.cool";
 
 WiFiClient espClient;
@@ -19,43 +18,21 @@ char interupsi[BAT_BUFFER_SIZE];
 int value = 0;
 long value1 = 1;
 const char* value2 = "gvhbjnkja809i"; 
-int batt=76;
+int batt = 76;
 
 hw_timer_t *timer = NULL;  // Timer untuk interrupt
 volatile bool timerFlag = false;
 
-// Fungsi untuk menghubungkan ke WiFi
-void setup_wifi() {
-  delay(10);
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  randomSeed(micros());
-
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
-}
 
 // Fungsi interrupt untuk pengambilan sampel
 void IRAM_ATTR onTimer() {
   timerFlag = true; 
   batt++;
   snprintf(interupsi, MSG_BUFFER_SIZE, "MEJA #%ld BATTERAI #%d", value1, batt);
-  //client.publish("outTopic", msg);
-  //Serial.printf("BATERAI");
-  //Serial.println(interupsi);
 }
+
+
+// Fungsi interrupt untuk pengambilan sampel
 
 // Fungsi reconnect untuk koneksi ke MQTT broker
 void reconnect() {
@@ -76,20 +53,38 @@ void reconnect() {
 
 void setup() {
   Serial.begin(115200);
-  setup_wifi();
+
+  // Inisialisasi WiFiManager untuk koneksi WiFi
+  WiFiManager wm;
+  bool res;
+  res = wm.autoConnect("AutoConnectAP", "password"); // AP dengan password jika koneksi gagal
+
+  //wm.resetSettings();//PENGAPLIKASIAN DITAMBAHKAN KE BUTTON
+  
+  if (!res) {
+    Serial.println("Failed to connect to WiFi");
+    // Bisa restart jika perlu
+    // ESP.restart();
+  } else {
+    Serial.println("WiFi connected successfully");
+    Serial.println("IP Address: ");
+    Serial.println(WiFi.localIP());
+  }
+
   client.setServer(mqtt_server, 1883);
+
+  // Inisialisasi timer dengan timer 0, divider 80, dan count up
+  timer = timerBegin(0, 80, true);  // Timer 0, divider 80 (prescaler 80 MHz), hitung ke atas
   
-  // Inisialisasi timer dengan frekuensi 1 MHz (1 us per tick)
-  timer = timerBegin(1000000);  // Menggunakan 1 MHz sebagai frekuensi
+  // Hubungkan interrupt ke fungsi onTimer, dengan rising edge (true)
+  timerAttachInterrupt(timer, &onTimer, true);
   
-  // Hubungkan interrupt ke fungsi onTimer
-  timerAttachInterrupt(timer, &onTimer);  // Tidak ada argumen ketiga
-  
-  // Atur alarm ke 5 detik (5.000.000 mikrodetik), dengan autoreload
-  timerAlarm(timer, 10000000, true, 0); // Tambahkan 0 sebagai argumen reload_count
+  // Atur alarm ke 10.000.000 mikrodetik (10 detik), dengan autoreload
+  timerAlarmWrite(timer, 10000000, true);  // 10 juta microseconds, autoreload diaktifkan
   
   // Aktifkan alarm
-  timerStart(timer);
+  timerAlarmEnable(timer);
+
 }
 
 void loop() {
@@ -101,7 +96,9 @@ void loop() {
   
   if(timerFlag){
     client.publish("outTopic", interupsi);
-    Serial.printf("BATERAI");
+
+    Serial.printf("BATERAI ");
+
     Serial.println(interupsi);
     timerFlag = false;  // Reset flag
   }
