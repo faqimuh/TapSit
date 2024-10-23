@@ -1,5 +1,9 @@
 <div align="center">
-<h1> Rancangan Skematik Hardware TapSit</h1>
+  <h1> Layout PCB </h1>
+  
+  ![Tampilan Produk 1][def1] 
 
-![alt text](skematik.png)
 </div>
+
+[def1]: /assets/SKEMATIK.png
+

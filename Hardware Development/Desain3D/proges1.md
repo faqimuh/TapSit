@@ -1,19 +1,14 @@
-<div align=center>
- <h1> Desain 3D Casing Komponen dan PCB</h1>
+<div align="center">
+  <h1> Desain 3D Produk</h1>
 
-<h2> Tampilan Produk </h2>
+  <h2> Tampilan 3D PCB </h2>
+  
+  ![Tampilan Produk 1][def1] 
 
-![alt text](AssemblyProyekIoT.png)
-
-<h2> Versi 1 Baterai </h2>
-
-![alt text](AssemblyProyekIoT1.png)
-
-![alt text](<Isi box.png>)
-
-<h2> Versi 2 Baterai </h2>
-
-![alt text](AssemblyProyekIoT2.png)
-
-![alt text](<Isi box 2.png>)
+  ![Tampilan Produk 1][def2] 
+  
 </div>
+
+[def1]: /assets/PCB1.png
+[def2]: /assets/PCB2.png
+
