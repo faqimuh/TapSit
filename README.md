@@ -31,6 +31,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
     * [Rangkaian Skematik](#Rangkaian-Skematik)
     * [Pin I/O](#Pinout)
     * [Layout PCB](#Layout-PCB)
+- [Software](#Software)
 - [Hasil Produk](#Hasil-Produk)
 - [Rincian Biaya](#Rincian-Biaya)
 
@@ -40,7 +41,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 ## Hardware
   ### Rangkaian Skematik
 <div align = center>
-<img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
+<img src="assets/SKEMATIK.png" alt="Skematik" />
 </div>
 
   ### Pinout
@@ -149,13 +150,13 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 
   ### Layout PCB
-  <img src="Hardware Development/LayoutPCB/pcb.png" alt="Layout" />
+  <img src="assets/LAYOUT.png" alt="Layout" />
 
 
 <p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
 
 <p>File Download  <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing"> Link </a>.</p>
-
+## Software
 ## Hasil Produk
 ## Rincian Biaya
 
