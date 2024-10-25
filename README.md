@@ -153,9 +153,10 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
   <img src="assets/LAYOUT.png" alt="Layout" />
 
 
-<p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
+  <p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
 
-<p>File Download  <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing"> Link </a>.</p>
+  <p>File Download  <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing"> Link </a></p>
+
 ## Software
 ## Hasil Produk
 ## Rincian Biaya
