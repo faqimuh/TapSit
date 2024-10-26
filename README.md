@@ -69,7 +69,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
   ### Pinout yang Dipakai
 
-giPin GPIO34 | untuk data input baterai<br>
+Pin GPIO34 | untuk data input baterai<br>
 Pin GPIO26 | untuk indikator LED<br>
 Pin GPIO27 | untuk indikator LED<br>
 Pin GPIO13 | untuk input interrupt<br>
