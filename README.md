@@ -45,10 +45,14 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 <div align="center">
 
 <video controls src="./assets/produk.mp4" title="Title"></video>
+  Tampilan 3D 
+ ![Tampilan Produk 0][def0]
+ ![Tampilan Produk 1][def1]
+ ![Tampilan Produk 2][def2]
 
- ![Tampilan Produk 5][def5]
-
- [def5]: /assets/Desain3.png
+[def0]: /assets/Desain1.png
+[def1]: /assets/Desain2.png
+[def2]: /assets/Desain3.png
 </div>
 
 ### Rangkaian Skematik
@@ -57,7 +61,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 </div>
 
  ### Layout PCB
-  <img src="assets/Layout.png" alt="Layout" />
+  <img src="assets/LAYOUT.png" alt="Layout" />
 
 <p> Menggunakan PCB 2 Layer </p>
 
