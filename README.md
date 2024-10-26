@@ -6,7 +6,9 @@
 
 # TapSit
 <div align="center">
-  <img src="assets/TS1.png" alt="LOGO" />
+
+  <img src="./assets/logo.jpg" alt="LOGO" />
+
 </div>
 
 # Sistem Pemilihan dan Pemantauan Tempat Duduk Berbasis RFID untuk Optimalisasi Industri F&B
@@ -38,125 +40,48 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 
 ## Hardware
-  ### Rangkaian Skematik
-<div align = center>
-<img src="Hardware Development/Skematik/gambarskematik.png" alt="Skematik" />
+### Produk
+
+<div align="center">
+
+<video controls src="./assets/produk.mp4" title="Title"></video>
+
+ ![Tampilan Produk 5][def5]
+
+ [def5]: /assets/Desain3.png
 </div>
 
-  ### Pinout
-<div align=center>
-<div class="table-container">
-    <table>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Pin GPIO Ke- </th>
-                <th>Alasan</th>
-                <th>Fungsi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>32</td>
-                <td>Aman untuk I/O</td>
-                <td>Input info daya baterai</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>15</td>
-                <td>Aman untuk I/O</td>
-                <td>Output ke buzzer</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>33</td>
-                <td>Aman untuk I/O</td>
-                <td>Output ke LED_G</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>17</td>
-                <td>Aman untuk I/O</td>
-                <td>Output ke LED_R</td>
-            </tr>
-             <tr>
-                <td>6</td>
-                <td>3,3V</td>
-                <td>default</td>
-                <td>Daya RFID</td>
-            </tr>
-             <tr>
-                <td>7</td>
-                <td>GND 3</td>
-                <td>default</td>
-                <td>GND RFID</td>
-            </tr>
-             <tr>
-                <td>8</td>
-                <td>5</td>
-                <td>default</td>
-                <td>Pin SDA RFID</td>
-            </tr>
-             <tr>
-                <td>9</td>
-                <td>18</td>
-                <td>default</td>
-                <td>Pin SCK RFID</td>
-            </tr>
-             <tr>
-                <td>10</td>
-                <td>23</td>
-                <td>default</td>
-                <td>Pin MOSI RFID</td>
-            </tr>
-             <tr>
-                <td>11</td>
-                <td>19</td>
-                <td>default</td>
-                <td>Pin MISO RFID</td>
-            </tr>
-             <tr>
-                <td>12</td>
-                <td>0</td>
-                <td>default</td>
-                <td>Pin RST RFID</td>
-            </tr>
-               <tr>
-                <td>13</td>
-                <td>Vin</td>
-                <td>default</td>
-                <td>Daya ESP32</td>
-            </tr>
-               <tr>
-                <td>14</td>
-                <td>GND1</td>
-                <td>default</td>
-                <td>G pembagi (V) dan G ESP32</td>
-            </tr>
-               <tr>
-                <td>15</td>
-                <td>GND2</td>
-                <td>default</td>
-                <td>G LED_R dan G LED_G</td>
-            </tr>
-         </tbody>
-    </table>
+### Rangkaian Skematik
+<div align = center>
+<img src="assets/SKEMATIK.png" alt="Skematik" />
+</div>
 
-<p>File Download<a href="https://drive.google.com/file/d/1diomlFyTaUs_eFDkaGRLsYESl7vDo8c1/view?usp=sharing">Link</a>.</p>
+ ### Layout PCB
+  <img src="assets/Layout.png" alt="Layout" />
 
-    
+<p> Menggunakan PCB 2 Layer </p>
 
 
-  ### Layout PCB
-  <img src="Hardware Development/LayoutPCB/pcb.png" alt="Layout" />
+
+  ### Pinout yang Dipakai
+
+giPin GPIO34 | untuk data input baterai<br>
+Pin GPIO26 | untuk indikator LED<br>
+Pin GPIO27 | untuk indikator LED<br>
+Pin GPIO13 | untuk input interrupt<br>
+Pin GPIO14 | untuk output buzzer<br>
+Pin MISO   | untuk RFID <br>
+Pin MOSI   | untuk RFID<br>
+Pin SCK    | untuk RFID<br>
+Pin SDA    | untuk RFID<br>
+Pin RST    | untuk RFID<br>
+Pin 3,3V   | untuk input tegangan<br>
+Pin GND    | untuk ground<br>
 
 
-<p> Menggunakan PCB 2 Layer <br>Ukuran jalur 0,75mm dan 0,3mm</p>
 
-<p>File Download  <a href="https://drive.google.com/file/d/1fTUtGnzqFyHy10sOkZaSZF4weKkYOswV/view?usp=sharing"> Link </a>.</p>
 
-## Hasil Produk
+
 ## Rincian Biaya
 
 | No  | Item                   | Jumlah | Harga   | Total   |Link|
