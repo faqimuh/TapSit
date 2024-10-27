@@ -172,8 +172,10 @@ Jika kamu menggunakan HiveMQ Cloud (layanan broker MQTT yang di-host oleh HiveMQ
 ### 2.  Buat atau Kelola MQTT Cluster
    * Di dashboard, klik "Create Cluster" untuk membuat broker MQTT baru jika belum ada. Jika sudah ada cluster, pilih cluster yang ingin kamu konfigurasi.
    <img src="assets/cluster.png" />
+   
    * Setelah memilih atau membuat cluster, kamu akan masuk ke halaman detail cluster.
    <img src="assets/cluster2.png"/>
+   
 ### 3. Mengaktifkan SSL/TLS di HiveMQ Cloud
 HiveMQ Cloud secara otomatis mengaktifkan SSL/TLS untuk koneksi aman. Kamu tidak perlu secara manual membuat atau mengunggah sertifikat, karena HiveMQ Cloud menggunakan sertifikat yang diterbitkan oleh Let's Encrypt atau penyedia sertifikat lainnya untuk mengamankan koneksi.
 1. Port TLS: HiveMQ Cloud biasanya menyediakan dua port:
@@ -185,8 +187,9 @@ Kamu hanya perlu memastikan bahwa klien MQTT yang kamu gunakan terhubung ke port
 1. Pada halaman detail cluster, pilih menu "Access Management" atau "Authentication" di bagian navigasi atas.
 
 2. Di halaman Authentication, kamu akan menemukan opsi untuk mengatur otentikasi username dan password.
+   
 ### Menambahkan Username dan Password
-1.Di halaman Authentication, akan ada opsi untuk "Add User" atau "Create new credentials".
+1. Di halaman Authentication, akan ada opsi untuk "Add User" atau "Create new credentials".
 
 2. Klik "Add User".
 
