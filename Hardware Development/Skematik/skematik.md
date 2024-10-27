@@ -1,5 +1,9 @@
-<div align = center>
- <h3>TAMPILAN SKEMATIK</h3>
+<div align="center">
+  <h1> Layout PCB </h1>
+  
+  ![Tampilan Produk 1][def1] 
 
+</div>
 
-![alt text](gambarskematik-1.png)
+[def1]: /assets/SKEMATIK.png
+
