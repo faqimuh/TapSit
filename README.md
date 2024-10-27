@@ -188,7 +188,7 @@ Kamu hanya perlu memastikan bahwa klien MQTT yang kamu gunakan terhubung ke port
 
 2. Di halaman Authentication, kamu akan menemukan opsi untuk mengatur otentikasi username dan password.
    
-### Menambahkan Username dan Password
+### 5. Menambahkan Username dan Password
 1. Di halaman Authentication, akan ada opsi untuk "Add User" atau "Create new credentials".
 
 2. Klik "Add User".
@@ -198,22 +198,45 @@ Kamu hanya perlu memastikan bahwa klien MQTT yang kamu gunakan terhubung ke port
   Setelah mengisi username dan password, klik "Save" atau "Add" untuk menyimpan kredensial tersebut.
 <img src="assets/cluster3.png"/>
 
-### 5. Menghubungkan Klien MQTT dengan Username dan Password
-Setelah username dan password berhasil dibuat, kamu dapat menggunakannya untuk menghubungkan klien MQTT ke broker HiveMQ Cloud.
-Berikut adalah contoh perintah menggunakan Mosquitto untuk berlangganan ke topik tertentu dengan username dan password:
-```
-mosquitto_sub -h your-cluster-url.hivemq.cloud -p 8883 -u "your-username" -P "your-password" -t "test/topic" --cafile /path/to/ca.crt
-```
-* `-h `: URL dari broker HiveMQ Cloud (yang diberikan saat kamu membuat cluster).
-* `-p`: Port (gunakan 8883 untuk koneksi yang aman melalui TLS).
-* `-u:` Username yang telah kamu buat.
-* `-P:` Password yang sesuai dengan username tersebut.
-* `--cafile`: Opsi ini untuk menunjuk sertifikat CA jika diperlukan, tapi untuk HiveMQ Cloud, biasanya sertifikat CA sudah otomatis terpercaya.
 
-### 6. Uji Koneksi
-Setelah klien dikonfigurasi dengan username dan password yang sesuai, pastikan untuk menguji koneksi klien ke broker. Cek log di dashboard HiveMQ Cloud untuk melihat status klien yang terhubung atau pada navigasi WEB CLIENT untuk melihat pesan yang terkirim.
+### 6. Uji Koneksi Dengan Dengan MQTT.Cool
+1. Buka Situs Test Client
+Kunjungi https://testclient-cloud.mqtt.cool/ menggunakan browser.
 
-### 7. Mengelola Username dan Password
+2. Masukkan Informasi Broker MQTT
+Setelah halaman terbuka, isi informasi koneksi broker yang relevan di antarmuka web:
+
+   * Broker Address: Masukkan hostname atau alamat IP dari broker HiveMQ Cloud kamu. Misalnya, `your_hivemq_cluster_host`.
+   * Port: Gunakan 8883, yang merupakan port standar untuk koneksi MQTT over TLS/SSL.
+   * Client ID: Buat Client ID unik. Misalnya, `TestClient-12345`.
+   * Username dan Password: Jika HiveMQ mengharuskan autentikasi, masukkan username dan password yang telah dikonfigurasi.
+
+Aktifkan opsi untuk SSL/TLS dengan mencentang atau memilih opsi yang sesuai (biasanya berupa checkbox atau pilihan yang diberi label Enable SSL atau Use TLS). Ini memastikan bahwa koneksi ke broker HiveMQ menggunakan enkripsi.
+
+![alt text](assets/ujikoneksi1.png)
+
+3. Connection Settings
+
+Pada navigasi Web client isi username dan password sesuai dengan Credential yang sudah dibuat pada autentification. Buatlah topik yang misalnya`Test` kemudian subcribe dan ubah Qos menjadi 2. 
+
+![alt text](assets/ujikoneksi2.png)
+
+setelah itu klik tombol connect untuk mengaktifkan koneksi broker.
+
+4. Connect to Broker
+
+Klik Connect atau tombol sejenis untuk mencoba terhubung ke broker HiveMQ. Jika semua konfigurasi sudah benar, klien testclient-cloud.mqtt.cool akan berhasil terhubung ke broker melalui TLS/SSL, dan status akan menunjukkan bahwa kamu terhubung.
+
+![alt text](assets/ujikoneksi5.png)
+
+### 7. Uji Pengiriman dan Penerimaan Pesan
+Setelah koneksi berhasil:
+   * Gunakan bagian Publish untuk mengirim pesan ke topik tertentu. Masukkan nama topik dan payload pesan, lalu klik Publish.
+   * Untuk menerima pesan, gunakan bagian Subscribe untuk berlangganan ke topik tertentu. Masukkan nama topik dan klik Subscribe. Kamu akan menerima pesan apa pun yang dipublikasikan ke topik tersebut oleh klien lain atau oleh klien ini sendiri.
+![alt text](assets/ujikoneksi3.png)
+![alt text](assets/ujikoneksi4.png)
+
+### 8. Mengelola Username dan Password
 * Kamu dapat kembali ke halaman Security/Authentication kapan saja untuk menambahkan, mengedit, atau menghapus username dan password.
 * Ini berguna jika kamu ingin memberikan akses kepada lebih banyak klien atau ingin mengganti kredensial yang ada untuk meningkatkan keamanan.
 
