@@ -1,6 +1,7 @@
 # TAPSIT FIRMWARE
-
+<div align="justify">
 Firmware diprogram dengan menggunakan software PLATFORM IO pada Visual Studio Code. Program menggunakan framework milik arduino dengan tujuan mempermudah penggunaan library pada sistem.
+</div>
 
 ## LIBRARY
 
