@@ -51,12 +51,10 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 
 # Hardware
-## Produk
+## Desain Produk
 
 <div align="center">
 
-<video controls src="./assets/produk.mp4" title="Title"></video>
-  Tampilan 3D 
  ![Tampilan Produk 0][def0]
  ![Tampilan Produk 1][def1]
  ![Tampilan Produk 2][def2]
@@ -65,6 +63,10 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [def1]: /assets/Desain2.png
 [def2]: /assets/Desain3.png
 </div>
+
+## Diagram Block
+
+<img src="./assets/diagram-block.png" alt="LOGO" />
 
 ## Rangkaian Skematik
 <div align = center>
@@ -93,6 +95,8 @@ Pin SDA    | untuk RFID<br>
 Pin RST    | untuk RFID<br>
 Pin 3,3V   | untuk input tegangan<br>
 Pin GND    | untuk ground<br>
+
+
 
 # Software
 
