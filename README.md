@@ -64,9 +64,14 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [def2]: /assets/Desain3.png
 </div>
 
+## Uploud Casing di thingivers
+<img src="./assets/Thing-Verse.png" alt="LOGO" />
+
+https://www.thingiverse.com/thing:6816870
+
 ## Diagram Block
 
-<img src="./assets/diagram-block.png" alt="LOGO" />
+<img src="./assets/diagram-sistem.png" alt="LOGO" />
 
 ## Rangkaian Skematik
 <div align = center>
