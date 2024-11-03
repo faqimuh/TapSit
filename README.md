@@ -33,7 +33,23 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 * Penggunaan Teknologi RFID yang Cepat dan Aman
 * Fleksibilitas Protokol Komunikasi
 
-
+## Development
+### Tahun 1
+* Monitoring kursi kosong dalam waktu nyata.
+* Akses ke platform pemantauan tempat duduk berbasis cloud
+* Notifikasi kursi kosong dalam waktu nyata.
+* Laporan penggunaan kursi bulanan.
+* Dukungan perangkat keras untuk 10 unit pembaca RFID.
+### Tahun 2
+* Pemantauan multi-lokasi (hingga 3 cabang).
+* Laporan penggunaan kursi mingguan dan bulanan.
+* Integrasi dengan aplikasi reservasi pihak ketiga.
+* Dukungan perangkat keras untuk 30 unit pembaca RFID.
+### Tahun 3
+* Analitik lanjutan dan laporan custom sesuai permintaan.
+* Dukungan pemantauan untuk hingga 10 lokasi.
+* Sistem pemesanan kursi langsung untuk pelanggan melalui aplikasi mobile.
+* Dukungan perangkat keras untuk 50 unit pembaca RFID.
 
 <div align="center">
 
