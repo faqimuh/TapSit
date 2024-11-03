@@ -15,6 +15,25 @@
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
 </div>
 
+## Manfaat
+* Mengoptimalkan Pengelolaan Tempat Duduk
+* Mengurangi Waktu Tunggu Pelanggan
+* Meningkatkan Efisiensi Operasional
+* Meningkatkan Kepuasan Pelanggan
+* Mengurangi Kesalahan dalam Pengelolaan Tempat Duduk
+* Memudahkan Rotasi Pelanggan
+* Peningkatan Citra Modern dan Teknologi
+
+## Keunggulan
+* Pemantauan Real-time
+* Otomatisasi Berbasis IoT
+* Modular dan Skalabel
+* Kompatibilitas dengan Infrastruktur Jaringan Lokal
+* Visualisasi yang Jelas untuk Staf
+* Penggunaan Teknologi RFID yang Cepat dan Aman
+* Fleksibilitas Protokol Komunikasi
+
+
 
 <div align="center">
 
@@ -22,19 +41,9 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 </div>
 
-# The Stackholder
-
-| No | Name                   | Role                                                               |
-|----|------------------------|--------------------------------------------------------------------|
-| 1  | Muhammad Faqidin       | Project Manager                                                    |
-| 2  | Ahmad Zen Azhari       | Hardware Development                                               |
-| 3  | Fadlan Surya           | Software Development                                               |
-| 4  | Adib Tantowi           | UI/UX Designer                                                     |
-| 5  | Rizka Sugiharto        | Data Analyst                                                       |
-| 6  | M Lukman Al Khakim     | Procurement Product                                                |
-
-
 # Daftar Isi
+- [Desain Produk](#Desain-Produk)
+- [Diagram Arsitektur Sistem](#Diagram-Arsitektur-Sistem)
 - [Hardware](#Hardware)
     * [Rangkaian Skematik](#Rangkaian-Skematik)
     * [Pin I/O](#Pinout)
@@ -47,8 +56,8 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 
 
-# Hardware
-## Desain Produk
+
+# Desain Produk
 
 <div align="center">
 
@@ -59,17 +68,13 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [def0]: /assets/Desain1.png
 [def1]: /assets/Desain2.png
 [def2]: /assets/Desain3.png
+[Download File 3D](https://www.thingiverse.com/thing:6816870)
 </div>
 
-## Uploud Casing di thingivers
-<img src="./assets/Thing-Verse.png" alt="LOGO" />
-
-https://www.thingiverse.com/thing:6816870
-
-## Diagram Block
-
+# Diagram Arsitektur Sistem
 <img src="./assets/diagram-sistem.png" alt="LOGO" />
 
+# Hardware
 ## Rangkaian Skematik
 <div align = center>
 <img src="assets/SKEMATIK.png" alt="Skematik" />
