@@ -37,7 +37,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 <div align="center">
 
-  <img src="./assets/anggota.png" alt="LOGO" />
+  <img src="./assets/anggota.jpg" alt="LOGO" />
 
 </div>
 
