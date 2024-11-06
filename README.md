@@ -66,9 +66,11 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 ## Uploud Casing di thingivers
 <img src="./assets/Thing-Verse.png" alt="LOGO" />
+<div align="center">
 
 https://www.thingiverse.com/thing:6816870
 
+</div>
 ## Diagram Block
 
 <img src="./assets/diagram-sistem.png" alt="LOGO" />
