@@ -6,10 +6,10 @@ Jika kamu menggunakan HiveMQ Cloud (layanan broker MQTT yang di-host oleh HiveMQ
    * Setelah masuk, kamu akan diarahkan ke dashboard HiveMQ Cloud.
 ### 2.  Buat atau Kelola MQTT Cluster
    * Di dashboard, klik "Create Cluster" untuk membuat broker MQTT baru jika belum ada. Jika sudah ada cluster, pilih cluster yang ingin kamu konfigurasi.
-<img src="assets/cluster.png" />
+<img src="../assets/cluster.png" /> 
    
    * Setelah memilih atau membuat cluster, kamu akan masuk ke halaman detail cluster.
-<img src="assets/cluster2.png"/>
+<img src="../assets/cluster2.png"/>
    
 ### 3. Mengaktifkan SSL/TLS di HiveMQ Cloud
 HiveMQ Cloud secara otomatis mengaktifkan SSL/TLS untuk koneksi aman. Kamu tidak perlu secara manual membuat atau mengunggah sertifikat, karena HiveMQ Cloud menggunakan sertifikat yang diterbitkan oleh Let's Encrypt atau penyedia sertifikat lainnya untuk mengamankan koneksi.
@@ -28,7 +28,7 @@ Kamu hanya perlu memastikan bahwa klien MQTT yang kamu gunakan terhubung ke port
   * Username: Masukkan username untuk klien yang akan menghubungkan ke broker MQTT.
   * Password: Masukkan password untuk username tersebut. Pastikan menggunakan password yang kuat untuk keamanan.
 Setelah mengisi username dan password, klik "Save" atau "Add" untuk menyimpan kredensial tersebut.
-<img src="assets/cluster3.png"/>
+<img src="../assets/cluster3.png"/>
 
 ### 6. Uji Koneksi Dengan Dengan MQTT.Cool
 1. Buka Situs Test Client
@@ -44,13 +44,13 @@ Setelah mengisi username dan password, klik "Save" atau "Add" untuk menyimpan kr
      
 Aktifkan opsi untuk SSL/TLS dengan mencentang atau memilih opsi yang sesuai (biasanya berupa checkbox atau pilihan yang diberi label Enable SSL atau Use TLS). Ini memastikan bahwa koneksi ke broker HiveMQ menggunakan enkripsi.
 
-![alt text](assets/ujikoneksi1.png)
+![alt text](../assets/ujikoneksi1.png)
 
 3. Connection Settings
    
 Pada navigasi Web client isi username dan password sesuai dengan Credential yang sudah dibuat pada autentification. Buatlah topik yang misalnya`Test` kemudian subcribe dan ubah Qos menjadi 2. 
 
-![alt text](assets/ujikoneksi2.png)
+![alt text](../assets/ujikoneksi2.png)
 
 setelah itu klik tombol connect untuk mengaktifkan koneksi broker.
 
@@ -58,14 +58,14 @@ setelah itu klik tombol connect untuk mengaktifkan koneksi broker.
 
 Klik Connect atau tombol sejenis untuk mencoba terhubung ke broker HiveMQ. Jika semua konfigurasi sudah benar, klien testclient-cloud.mqtt.cool akan berhasil terhubung ke broker melalui TLS/SSL, dan status akan menunjukkan bahwa kamu terhubung.
 
-![alt text](assets/ujikoneksi5.png)
+![alt text](../assets/ujikoneksi5.png)
 
 ### 7. Uji Pengiriman dan Penerimaan Pesan
 Setelah koneksi berhasil:
    * Gunakan bagian Publish untuk mengirim pesan ke topik tertentu. Masukkan nama topik dan payload pesan, lalu klik Publish.
    * Untuk menerima pesan, gunakan bagian Subscribe untuk berlangganan ke topik tertentu. Masukkan nama topik dan klik Subscribe. Kamu akan menerima pesan apa pun yang dipublikasikan ke topik tersebut oleh klien lain atau oleh klien ini sendiri.
-![alt text](assets/ujikoneksi3.png)
-![alt text](assets/ujikoneksi4.png)
+![alt text](../assets/assets/ujikoneksi3.png)
+![alt text](../assets/assets/ujikoneksi4.png)
 
 ### 8. Mengelola Username dan Password
 * Kamu dapat kembali ke halaman Security/Authentication kapan saja untuk menambahkan, mengedit, atau menghapus username dan password.
