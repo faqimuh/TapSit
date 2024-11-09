@@ -12,6 +12,10 @@ Preferences preferences;
 #define level 34
 #define RST_PIN 22      // RST Pin
 #define SS_PIN  21       // SDA Pin (CS)
+#define red_led 26
+#define green_led 27
+#define buzzer  14
+
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 bool wm_nonblocking = false; // change to true to use non blocking
@@ -67,6 +71,11 @@ void setup() {
   
   pinMode(level,INPUT);
   pinMode(TRIGGER_PIN, INPUT);
+  pinMode(red_led,OUTPUT);
+  pinMode(green_led,OUTPUT);
+
+  ledcSetup(0, 2000, 8);  // Kanal 0, frekuensi awal 2000 Hz, resolusi 8-bit
+  ledcAttachPin(buzzer, 0);
 
 
   SPI.begin();           // Memulai SPI bus
@@ -211,6 +220,8 @@ void loop() {
   //if (now - lastMsg > 2000) {
     //lastMsg = now;
     if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial()) {
+      digitalWrite(green_led,HIGH);
+      digitalWrite(red_led,LOW);
       return;
     }
     
@@ -229,10 +240,17 @@ void loop() {
     delay(1000);  // Delay untuk menunggu kartu diangkat
     mfrc522.PICC_HaltA(); // Menghentikan komunikasi dengan kartu
     
+   
   
     Serial.print("Publish message: ");
     Serial.println(msg);
     client.publish("tapsit", msg);  // Kirim pesan ke broker MQTT 
+    
+     digitalWrite(red_led,HIGH);
+    digitalWrite(green_led,LOW);
+   ledcWriteTone(0, 1500); 
+    delay(1500);
+     ledcWriteTone(0, 0); 
   }
   }
 //}
