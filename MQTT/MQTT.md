@@ -64,8 +64,8 @@ Klik Connect atau tombol sejenis untuk mencoba terhubung ke broker HiveMQ. Jika 
 Setelah koneksi berhasil:
    * Gunakan bagian Publish untuk mengirim pesan ke topik tertentu. Masukkan nama topik dan payload pesan, lalu klik Publish.
    * Untuk menerima pesan, gunakan bagian Subscribe untuk berlangganan ke topik tertentu. Masukkan nama topik dan klik Subscribe. Kamu akan menerima pesan apa pun yang dipublikasikan ke topik tersebut oleh klien lain atau oleh klien ini sendiri.
-![alt text](../assets/assets/ujikoneksi3.png)
-![alt text](../assets/assets/ujikoneksi4.png)
+![alt text](../assets/ujikoneksi3.png)
+![alt text](../assets/ujikoneksi4.png)
 
 ### 8. Mengelola Username dan Password
 * Kamu dapat kembali ke halaman Security/Authentication kapan saja untuk menambahkan, mengedit, atau menghapus username dan password.
