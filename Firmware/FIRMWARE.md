@@ -10,6 +10,7 @@ Library yang kami gunakan untuk memprogram firware dari system kami meliputi seb
 
         Library `wifi`  digunakan untuk menghubungkan system hardware dengan koneksi internet dengan protokol wifi atan wlan (wireless lan). Untuk melakukan konfigurasi tersebut, digunakanlah  library `wifi manager`. Salah satu Kelebihan dari library wifi manager ada pada fitur penyimpanan konfigurasi wifi yang telah disetting. Library `wifi manager` juga kami setting secara `advance` untuk memberikan input parameter tambahan yang dicustom untuk memberikan suatu variable untuk device tersebut.  Pada library `wifi manager` yang disetting advance juga dapat menambahkan button untuk melakukan reset konfigurasi dari koneksi wifi dan juga dapat membuat suatu algoritma timeout ketika wifi tidak dapat tersambung.
 
+
 #### 2. <PubSubClient.h>
 
         Library `PubSubClient` adalah library Arduino yang digunakan untuk mengimplementasikan komunikasi **Message Queue Telemetry Transport* (MQTT) pada microcontroller seperti ESP32 atau ESP8266. `MQTT` merupakan protokol komunikasi yang ringan dan banyak digunakan dalam aplikasi *Internet of Things* (IoT) untuk mengirim dan menerima data antara perangkat dan *server* (broker) melalui jaringan internet.
