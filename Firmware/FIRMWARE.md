@@ -57,7 +57,7 @@ Library yang kami gunakan untuk memprogram firware dari system kami meliputi seb
 
 
 
-![Video Title](/assets/testing.mp4)
+![Video Title](Firmware/assets/testing.mp4)
 
 </div>
 
