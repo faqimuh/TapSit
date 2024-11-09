@@ -42,3 +42,9 @@ Library yang kami gunakan untuk memprogram firware dari system kami meliputi seb
         Ketika kartu RFID terdeteksi, perangkat membaca UID kartu dan menyusunnya dalam string `msg` bersama dengan data `deviceID` dan level baterai. Data ini diformat dan dikirim ke broker MQTT melalui topik "tapsit". Setelah pesan berhasil dikirim, LED dan buzzer memberikan indikasi kepada pengguna dengan menyalakan LED merah dan mengaktifkan bunyi buzzer. Fungsi ini diatur dengan menyesuaikan frekuensi PWM pada buzzer, memberikan notifikasi bahwa kartu telah berhasil terbaca dan data telah dikirim.
 
         Pada fungsi `saveParamCallback()`, program menyimpan nilai `deviceID` yang diperoleh dari input pengguna ke dalam `Preferences`. Fungsi ini dipanggil ketika pengguna menyimpan pengaturan di portal konfigurasi. Dengan menyimpan `deviceID` dalam `Preferences`, perangkat akan tetap memiliki informasi ini setelah dinyalakan ulang, memungkinkan akses berkelanjutan ke data yang tersimpan. Proses ini memastikan bahwa konfigurasi perangkat dapat dipertahankan tanpa perlu diatur ulang secara manual setiap kali perangkat dimatikan atau mengalami reset. Pada proram ini data yang disimpan di preferences merupakan identitas dari device yaitu nomor device dimana akan ditempatkan di suatu meja.
+
+
+
+
+
+![Video Title](/assets/testing.mp4)
