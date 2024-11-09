@@ -15,18 +15,51 @@
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
 </div>
 
-# The Stackholder
-| No | Name                   | Role                                                               |
-|----|------------------------|--------------------------------------------------------------------|
-| 1  | Muhammad Faqidin       | Project Manager                                                    |
-| 2  | Ahmad Zen Azhari       | Hardware Development                                               |
-| 3  | Fadlan Surya           | Software Development                                               |
-| 4  | Adib Tantowi           | UI/UX Designer                                                     |
-| 5  | Rizka Sugiharto        | Data Analyst                                                       |
-| 6  | M Lukman Al Khakim     | Procurement Product                                                |
+## Manfaat
+* Mengoptimalkan Pengelolaan Tempat Duduk
+* Mengurangi Waktu Tunggu Pelanggan
+* Meningkatkan Efisiensi Operasional
+* Meningkatkan Kepuasan Pelanggan
+* Mengurangi Kesalahan dalam Pengelolaan Tempat Duduk
+* Memudahkan Rotasi Pelanggan
+* Peningkatan Citra Modern dan Teknologi
 
+## Keunggulan
+* Pemantauan Real-time
+* Otomatisasi Berbasis IoT
+* Modular dan Skalabel
+* Kompatibilitas dengan Infrastruktur Jaringan Lokal
+* Visualisasi yang Jelas untuk Staf
+* Penggunaan Teknologi RFID yang Cepat dan Aman
+* Fleksibilitas Protokol Komunikasi
+
+## Development
+### Tahun 1
+* Monitoring kursi kosong dalam waktu nyata.
+* Akses ke platform pemantauan tempat duduk berbasis cloud
+* Notifikasi kursi kosong dalam waktu nyata.
+* Laporan penggunaan kursi bulanan.
+* Dukungan perangkat keras untuk 10 unit pembaca RFID.
+### Tahun 2
+* Pemantauan multi-lokasi (hingga 3 cabang).
+* Laporan penggunaan kursi mingguan dan bulanan.
+* Integrasi dengan aplikasi reservasi pihak ketiga.
+* Dukungan perangkat keras untuk 30 unit pembaca RFID.
+### Tahun 3
+* Analitik lanjutan dan laporan custom sesuai permintaan.
+* Dukungan pemantauan untuk hingga 10 lokasi.
+* Sistem pemesanan kursi langsung untuk pelanggan melalui aplikasi mobile.
+* Dukungan perangkat keras untuk 50 unit pembaca RFID.
+
+<div align="center">
+
+  <img src="./assets/anggota.jpg" alt="LOGO" />
+
+</div>
 
 # Daftar Isi
+- [Desain Produk](#Desain-Produk)
+- [Diagram Arsitektur Sistem](#Diagram-Arsitektur-Sistem)
 - [Hardware](#Hardware)
     * [Rangkaian Skematik](#Rangkaian-Skematik)
     * [Pin I/O](#Pinout)
@@ -39,13 +72,11 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
 
 
-# Hardware
-## Produk
+
+# Desain Produk
 
 <div align="center">
 
-<video controls src="./assets/produk.mp4" title="Title"></video>
-  Tampilan 3D 
  ![Tampilan Produk 0][def0]
  ![Tampilan Produk 1][def1]
  ![Tampilan Produk 2][def2]
@@ -53,8 +84,13 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [def0]: /assets/Desain1.png
 [def1]: /assets/Desain2.png
 [def2]: /assets/Desain3.png
+[Download File 3D](https://www.thingiverse.com/thing:6816870)
 </div>
 
+# Diagram Arsitektur Sistem
+<img src="./assets/diagram-sistem.png" alt="LOGO" />
+
+# Hardware
 ## Rangkaian Skematik
 <div align = center>
 <img src="assets/SKEMATIK.png" alt="Skematik" />
@@ -82,6 +118,8 @@ Pin SDA    | untuk RFID<br>
 Pin RST    | untuk RFID<br>
 Pin 3,3V   | untuk input tegangan<br>
 Pin GND    | untuk ground<br>
+
+
 
 # Software
 
