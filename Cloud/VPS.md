@@ -63,4 +63,4 @@ Setelah terhubung ke instance, Anda bisa mengkonfigurasi server sesuai kebutuhan
 
 ### Catatan
 AWS menawarkan Free Tier selama 12 bulan dengan batasan tertentu (contohnya tipe t2.micro gratis untuk penggunaan hingga 750 jam per bulan). Pastikan untuk memantau penggunaan dan biaya agar tidak dikenakan biaya tambahan.<br>
- [Video Tutorial](https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/jtG4zT5bGXA))
+ [Video Tutorial](https://youtu.be/jtG4zT5bGXA?si=vrAjOelVXwAc4a1R)
