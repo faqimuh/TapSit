@@ -134,6 +134,7 @@ Pin GND    | untuk ground<br>
 # Software
 Selamat datang di proyek ini. Berikut adalah beberapa panduan yang mungkin Anda butuhkan:
 - [Aktifasi SSL/TLS di Broker HiveMQ CLoud](MQTT/MQTT.md)
+- [Membuat Cloud di AWS Console (EC2)](Cloud/VPS.md)
 - [Koneksi Broker dengan Database Menggunakan Node-Red](Database/progres.md)
 
 
