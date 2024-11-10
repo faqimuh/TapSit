@@ -1,0 +1,18 @@
+// Validasi apakah data sudah lengkap dan benar
+if (rfid && !isNaN(meja) && !isNaN(batt)) {
+    // Buat query SQL untuk menyimpan atau memperbarui data di MySQL
+    var query = `
+        INSERT INTO test2 (meja, rfid, batt) 
+        VALUES (${meja}, '${rfid}', ${batt}) 
+        ON DUPLICATE KEY UPDATE 
+            rfid = '${rfid}', 
+            batt = ${batt}
+    `;
+    // Output ke MySQL node
+    msg.topic = query;
+} else {
+    // Jika data tidak lengkap, beri pesan error atau lakukan tindakan lain
+    msg.error = "Data tidak lengkap atau salah format.";
+}
+
+return msg;
