@@ -6,7 +6,7 @@
 
 # TapSit
 <div align="center">
-  <img src="./assets/latar.jpg" alt="latar" width="200px"/>
+  <img src="./assets/latar.jpg" alt="latar" width="600px"/>
 </div>
 
 # Sistem Pemilihan dan Pemantauan Tempat Duduk Berbasis RFID untuk Optimalisasi Industri F&B
