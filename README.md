@@ -154,3 +154,12 @@ Selamat datang di proyek ini. Berikut adalah beberapa panduan yang mungkin Anda 
 | 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |[Buy](https://id.shp.ee/LSUCxvz)                |
 |     |                        |        | **TOTAL** | 154.630 |
 
+# Cara Penggunaan 
+1. Pastikan perangkat dalam kondisi menyala dan telah berhasil terhubung dengan jaringan Wi-Fi untuk memastikan kelancaran proses komunikasi data.
+2. Pada tampilan web server, sistem akan menampilkan status setiap meja; meja yang belum terisi akan ditandai dengan warna hijau, sementara meja yang telah terisi akan ditandai dengan warna merah, memungkinkan pemantauan kondisi secara visual.
+3. Tempelkan kartu RFID yang sudah terdaftar pada perangkat untuk mengaktifkan proses pengenalan identitas melalui sensor.
+4. Data dari kartu RFID yang ditempelkan akan secara otomatis dikirim dan disimpan dalam database untuk tujuan pencatatan dan pemantauan.
+5. Pada perangkat atau meja yang sama, sistem database hanya akan memperbarui informasi terkait kondisi terakhir RFID serta status pemantauan baterai untuk efisiensi penyimpanan dan pemrosesan data.
+6. Setelah kartu RFID berhasil ditempelkan pada perangkat, tampilan pada web server akan secara otomatis diperbarui, menunjukkan bahwa meja tersebut telah terisi, berkat registrasi yang telah terjadi melalui perangkat.
+
+Untuk memberikan gambaran yang lebih jelas, video ini akan menunjukkan seluruh proses, mulai dari pengaktifan hingga penggunaan alat dalam berbagai kondisi, sehingga Anda bisa memahami manfaat dan efisiensi alat kami yang dapat diakses pada link [berikut ini](https://youtu.be/MPJk97POcxs?si=4I_-UE-o9XQQt0bo)
