@@ -55,6 +55,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 <div align="center">
 
   <img src="./assets/anggota.jpg" alt="LOGO" />
+  
 | No.            | Nama                | NRP            | Pembagian Tugas  |
 | :-------------:| :------------------:| :-------------:| :---------------:|
 | 1              | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github  |
