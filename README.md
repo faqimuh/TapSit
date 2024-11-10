@@ -1,8 +1,3 @@
-<div style="background-color: #2e2e2e; padding: 10px; border-radius: 5px; color: white;">
-  <h3>WORKSHOP MIKROKONTROLLER - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA</h3>
-  <p>DOSEN PENGAMPU : Akhmad Hendriawan ST, MT <br/> NIP. 197501272002121003</p>
-</div>
-
 
 # TapSit
 <div align="center">
@@ -14,6 +9,11 @@
 
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
 </div>
+
+`WORKSHOP MIKROKONTROLLER - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA`
+
+`DOSEN PENGAMPU : Akhmad Hendriawan ST, MT`
+`NIP. 197501272002121003`
 
 ## Manfaat
 * Mengoptimalkan Pengelolaan Tempat Duduk
@@ -51,9 +51,19 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 * Sistem pemesanan kursi langsung untuk pelanggan melalui aplikasi mobile.
 * Dukungan perangkat keras untuk 50 unit pembaca RFID.
 
+## Teammates
 <div align="center">
 
   <img src="./assets/anggota.jpg" alt="LOGO" />
+  
+| No.            | Nama                | NRP            | Pembagian Tugas  |
+| :-------------:| :------------------:| :-------------:| :---------------:|
+| 1              | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github  |
+| 2              | Ahmad Zen Ashari    | 2122600009     | Hardware, Desain Skematik dan Hardware, Publikasi melalui Github |
+| 3              | Fadlan Surya        | 2122600024     | Sofware, Mengatur Koneksi Hardware ke Broker, Publikasi melalui Github |
+| 4              | Adib Tantowi        | 2122600001     | UI/UX Designer, Membuat tampilan Web Server, Publikasi melalui Github |
+| 5              | Rizka Sugiharto     | 2122600008     | Data Analyst, Mengambil data dari Broker ke DataBase, Publikasi melalui Github|
+| 6              | M Lukman Al Khakim  | 2122600010     | Procurement Product, Proses Perakitan dan Soldering, Publikasi melalui Github   |
 
 </div>
 
@@ -124,6 +134,7 @@ Pin GND    | untuk ground<br>
 # Software
 Selamat datang di proyek ini. Berikut adalah beberapa panduan yang mungkin Anda butuhkan:
 - [Aktifasi SSL/TLS di Broker HiveMQ CLoud](MQTT/MQTT.md)
+- [Koneksi Broker dengan Database Menggunakan Node-Red](Database/progres.md)
 
 
 
