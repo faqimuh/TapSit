@@ -33,7 +33,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 * Penggunaan Teknologi RFID yang Cepat dan Aman
 * Fleksibilitas Protokol Komunikasi
 
-## Development
+## Development Plan
 ### Tahun 1
 * Monitoring kursi kosong dalam waktu nyata.
 * Akses ke platform pemantauan tempat duduk berbasis cloud
@@ -103,16 +103,17 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 # Hardware
 ## Rangkaian Skematik
 <div align = center>
-<img src="assets/SKEMATIK.png" alt="Skematik" />
+<img src="assets/SKEMATIK.png" alt="Skematik" width="600px" />
 </div>
 
 
  ## Layout PCB
-  <img src="assets/LAYOUT.png" alt="Layout" />
+ <div align = center>
+  <img src="assets/LAYOUT.png" alt="Layout" width="600px" />
 
 <p> Menggunakan PCB 2 Layer </p>
 
-
+</div>
 
   ## Pinout yang Dipakai
 
