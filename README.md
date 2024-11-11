@@ -157,6 +157,10 @@ Selamat datang di proyek ini. Berikut adalah beberapa panduan yang mungkin Anda 
 |     |                        |        | **TOTAL** | 154.630 |
 
 # Cara Penggunaan 
+
+https://github.com/user-attachments/assets/884f3dd7-7e4f-4ce1-bf2d-9252606a5dd6
+
+
 1. Pastikan perangkat dalam kondisi menyala dan telah berhasil terhubung dengan jaringan Wi-Fi untuk memastikan kelancaran proses komunikasi data.
 2. Pada tampilan web server, sistem akan menampilkan status setiap meja; meja yang belum terisi akan ditandai dengan warna hijau, sementara meja yang telah terisi akan ditandai dengan warna merah, memungkinkan pemantauan kondisi secara visual.
 3. Tempelkan kartu RFID yang sudah terdaftar pada perangkat untuk mengaktifkan proses pengenalan identitas melalui sensor.
