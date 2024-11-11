@@ -75,7 +75,9 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
     * [Pin I/O](#Pinout)
     * [Layout PCB](#Layout-PCB)
 - [Software](#Software)
-    * [Aktifasi SSL/TLS di Broker HiveMQ CLoud](#aktifasi-ssltls-di-broker-hivemq-cloud)
+  * [Aktifasi SSL/TLS di Broker HiveMQ CLoud](MQTT/MQTT.md)
+  * [Membuat Cloud di AWS Console (EC2)](Cloud/VPS.md)
+  * [Koneksi Broker dengan Database Menggunakan Node-Red](Database/progres.md)
 - [Rincian Biaya](#Rincian-Biaya)
 
 
