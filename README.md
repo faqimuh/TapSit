@@ -97,7 +97,19 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [Download File 3D](https://www.thingiverse.com/thing:6816870)
 </div>
 
+
+## Uploud Casing di thingivers
+<img src="./assets/Thing-Verse.png" alt="LOGO" />
+<div align="center">
+
+https://www.thingiverse.com/thing:6816870
+
+</div>
+## Diagram Block
+
+
 # Diagram Arsitektur Sistem
+
 <img src="./assets/diagram-sistem.png" alt="LOGO" />
 
 # Hardware
