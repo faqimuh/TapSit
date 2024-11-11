@@ -1,0 +1,2 @@
+// Ambil payload dari MQTT, misal "rfid:gvhbjnkja809i,meja:1,batt:52"
+var payload = msg.payload;

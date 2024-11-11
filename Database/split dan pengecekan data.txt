@@ -1,0 +1,24 @@
+// Pisahkan data berdasarkan tanda koma
+var data = payload.split(',');
+
+// Buat objek untuk menyimpan data yang dipisahkan, dengan pengecekan
+var rfid = null;
+var meja = null;
+var batt = null;
+
+data.forEach(function(item) {
+    var keyValue = item.split(':');
+    if (keyValue.length === 2) {
+        var key = keyValue[0].trim();
+        var value = keyValue[1].trim();
+        
+        // Assign nilai berdasarkan key
+        if (key === "rfid") {
+            rfid = value;
+        } else if (key === "meja") {
+            meja = parseInt(value);
+        } else if (key === "batt") {
+            batt = parseInt(value);
+        }
+    }
+});
