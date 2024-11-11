@@ -103,9 +103,10 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 <div align="center">
 
 https://www.thingiverse.com/thing:6816870
-
 </div>
+
 ## Diagram Block
+<img src="./assets/AlurPenggunaanTapSit.png" alt="LOGO" />
 
 
 # Diagram Arsitektur Sistem
