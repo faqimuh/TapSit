@@ -117,7 +117,7 @@ $conn->close();
                   <div class="p-6 px-1 pt-0 text-center bg-transparent border-t-0 border-t-solid rounded-b-2xl lg:px-2">
                     <p class="mx-auto mb-6 leading-normal text-sm">
                       Mohon Maaf Hanya untuk Karyawan
-                      <a href="../pages/sign-up.html" class="relative z-10 font-semibold text-transparent bg-gradient-to-tl from-blue-600 to-cyan-400 bg-clip-text">Sign up</a>
+                     <!-- <a href="../pages/sign-up.html" class="relative z-10 font-semibold text-transparent bg-gradient-to-tl from-blue-600 to-cyan-400 bg-clip-text">Sign up</a>-->
                     </p>
                   </div>
                 </div>
@@ -136,12 +136,11 @@ $conn->close();
       <div class="container">
         <div class="flex flex-wrap -mx-3">
           <div class="flex-shrink-0 w-full max-w-full mx-auto mb-6 text-center lg:flex-0 lg:w-8/12">
-            <a href="javascript:;" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> Company </a>
-            <a href="javascript:;" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> About Us </a>
-            <a href="javascript:;" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> Team </a>
-            <a href="javascript:;" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> Products </a>
-            <a href="javascript:;" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> Blog </a>
-            <a href="javascript:;" target="_blank" class="mb-2 text-slate-400 sm:mb-0"> Pricing </a>
+
+            <a href="https://github.com/faqimuh/TapSit" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> GitHub </a>
+            <a href="https://www.youtube.com/watch?v=MPJk97POcxs" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12"> YouTube </a>
+           <a href="http://54.253.231.37/oo1/build/pages/profiltapsit.php" target="_blank" class="mb-2 mr-4 text-slate-400 sm:mb-0 xl:mr-12">Profil</a>
+
           </div>
         </div>
         <div class="flex flex-wrap -mx-3">

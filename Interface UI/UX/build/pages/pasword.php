@@ -50,102 +50,82 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Password</title>
+    <!-- Include external CSS (Bootstrap for simplicity) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <style>
-        /* Importing the "Cave" font from Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Caveat', cursive;
-            background-color: #1e1e1e;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background: #222D32;
+            font-family: 'Roboto', sans-serif;
         }
 
-        .container {
-            background: #333;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-            width: 300px;
+        .login-box {
+            margin-top: 75px;
+            background: #1A2226;
             text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            padding: 40px;
+            border-radius: 8px;
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #ffbf00;
-            text-shadow: 2px 2px 4px #000;
+        .login-key {
+            height: 100px;
+            font-size: 80px;
+            line-height: 100px;
+            background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            font-size: 1.2rem;
-            margin: 10px 0 5px;
-            color: #d1c4e9;
-        }
-
-        input[type="email"],
-        input[type="password"] {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            background-color: #555;
-            color: #fff;
-            font-size: 1rem;
-            outline: none;
-            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        input[type="email"]::placeholder,
-        input[type="password"]::placeholder {
-            color: #bdbdbd;
-        }
-
-        button {
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            background-color: #ffbf00;
-            color: #333;
-            font-size: 1.1rem;
+        .login-title {
+            margin-top: 15px;
+            font-size: 30px;
             font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-shadow: 1px 1px 3px #000;
+            color: #ECF0F5;
         }
 
-        button:hover {
-            background-color: #ffd54f;
+        .login-form {
+            margin-top: 25px;
+            text-align: left;
         }
 
-        /* Adding a stone-like texture */
-        .container {
-            background: radial-gradient(circle at 20% 20%, #3e3e3e, #1e1e1e);
-            border: 2px solid #4a4a4a;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7), inset 0px 0px 8px rgba(0, 0, 0, 0.6);
+        .form-group {
+            margin-bottom: 40px;
         }
 
-        input[type="email"]:focus,
-        input[type="password"]:focus {
-            background-color: #666;
-            outline: 2px solid #ffbf00;
+        input[type="email"], input[type="password"] {
+            background-color: #1A2226;
+            border: none;
+            border-bottom: 2px solid #0DB8DE;
+            font-weight: bold;
+            color: #ECF0F5;
+            outline: none;
+            margin-bottom: 20px;
         }
 
-        /* Style for message box */
+        .form-control-label {
+            font-size: 10px;
+            color: #6C6C6C;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .btn-outline-primary {
+            border-color: #0DB8DE;
+            color: #0DB8DE;
+            border-radius: 0px;
+            font-weight: bold;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #0DB8DE;
+            color: #fff;
+        }
+
+        .loginbttm {
+            padding: 0px;
+        }
+
         .message-box {
             margin-top: 15px;
             padding: 10px;
@@ -169,24 +149,47 @@ $conn->close();
 </head>
 <body>
     <div class="container">
-        <h1>Change Password</h1>
-        <form method="POST" action="" onsubmit="return handleFormSubmit(event)">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">
+                    Change Password
+                </div>
 
-            <label for="old_password">Old Password:</label>
-            <input type="password" id="old_password" name="old_password" placeholder="Enter old password" required>
+                <div class="col-lg-12 login-form">
+                    <form method="POST" action="" onsubmit="return handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label class="form-control-label">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">Old Password</label>
+                            <input type="password" class="form-control" name="old_password" placeholder="Enter old password" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">New Password</label>
+                            <input type="password" class="form-control" name="new_password" placeholder="Enter new password" required>
+                        </div>
 
-            <label for="new_password">New Password:</label>
-            <input type="password" id="new_password" name="new_password" placeholder="Enter new password" required>
-
-            <button type="submit">Update</button>
-        </form>
-        <div id="message-box" class="message-box"></div>
+                        <div class="col-lg-12 loginbttm">
+                            <div class="col-lg-6 login-btm login-text">
+                                <!-- Error Message -->
+                                <div id="message-box" class="message-box"></div>
+                            </div>
+                            <div class="col-lg-6 login-btm login-button">
+                                <button type="submit" class="btn btn-outline-primary">Update</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
-        // JavaScript to show message with animation
         function showMessage(message, type) {
             const messageBox = document.getElementById("message-box");
             messageBox.classList.remove("success", "error");
@@ -195,7 +198,7 @@ $conn->close();
             messageBox.style.display = "block";
             setTimeout(() => {
                 messageBox.style.opacity = "1";
-            }, 100); // Slight delay for smooth transition
+            }, 100);
         }
 
         function handleFormSubmit(event) {
@@ -213,7 +216,6 @@ $conn->close();
             xhr.send(formData);
         }
 
-        // Show message if there's any from PHP (initial page load)
         <?php if (!empty($message)) : ?>
             window.onload = function() {
                 showMessage(<?php echo json_encode($message); ?>, <?php echo json_encode($message_type); ?>);

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,27 +43,12 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.php">Home</a></li>
-                                <li><a href="build/pages/login.php">Admin</a></li>
-                                <li><a href="./discography.html">Discography</a></li>
-                                <li><a href="./tours.html">Tours</a></li>
-                                <li><a href="./videos.html">Videos</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="build/pages/login.php">About</a></li>
-                                        <li><a href="./blog.html">Blog</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                    </ul>
+                                <li><a href="./index.php">Home</a></li>
+                             
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="build/pages/login.php">Admin</a></li>
                             </ul>
                         </nav>
-                        <div class="header__right__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -115,22 +98,21 @@
         const kedelapanCircle = document.querySelector('.kedelapan-circle');
 
 
-        // Update warna lingkaran berdasarkan status RFID
         mejaData.forEach(meja => {
-            if (meja.meja === "1") { // Untuk meja 1
+            if (meja.meja === "1") { 
                 if (meja.rfid=="73389603") {
                     circle.classList.remove('red');
                     circle.classList.add('green');
                 } else {
-					circle.classList.add('red'); // Tambahkan kelas merah
+					circle.classList.add('red'); 
                     circle.classList.remove('green');
                 }
-            } else if (meja.meja === "2") { // Untuk meja 2
+            } else if (meja.meja === "2") { 
                 if (meja.rfid=="73389603") {
                     secondCircle.classList.remove('red');
                     secondCircle.classList.add('green');
                 } else {
-                    secondCircle.classList.add('red'); // Tambahkan kelas merah
+                    secondCircle.classList.add('red'); 
                     secondCircle.classList.remove('green');
                 }
             }else if (meja.meja === "3") { // Untuk meja 3
@@ -138,7 +120,7 @@
                     ketigaCircle.classList.remove('red');
                     ketigaCircle.classList.add('green');
                 } else {
-					ketigaCircle.classList.add('red'); // Tambahkan kelas merah
+					ketigaCircle.classList.add('red'); 
                     ketigaCircle.classList.remove('green');
                 }
             }else if (meja.meja === "4") { // Untuk meja 3
@@ -146,7 +128,7 @@
                     keempatCircle.classList.remove('red');
                     keempatCircle.classList.add('green');
                 } else {
-					keempatCircle.classList.add('red'); // Tambahkan kelas merah
+					keempatCircle.classList.add('red'); 
                     keempatCircle.classList.remove('green');
                 }
             }else if (meja.meja === "5") { // Untuk meja 3
@@ -154,7 +136,7 @@
                     kelimaCircle.classList.remove('red');
                     kelimaCircle.classList.add('green');
                 } else {
-					kelimaCircle.classList.add('red'); // Tambahkan kelas merah
+					kelimaCircle.classList.add('red'); 
                     kelimaCircle.classList.remove('green');
                 }
             }else if (meja.meja === "6") {
@@ -291,52 +273,6 @@
         </div>
     </section>
     <!-- About Section End -->
-
-    <!-- Services Section Begin -->
-    <section class="services">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 p-0">
-                    <div class="services__left set-bg" data-setbg="img/services/service-left.jpg">
-                        <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-0">
-                    <div class="row services__list">
-                        <div class="col-lg-6 p-0 order-lg-1 col-md-6 order-md-1">
-                            <div class="service__item deep-bg">
-                                <img src="img/services/service-1.png" alt="">
-                                <h4>Wedding</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 p-0 order-lg-2 col-md-6 order-md-2">
-                            <div class="service__item">
-                                <img src="img/services/service-2.png" alt="">
-                                <h4>Clubs and bar</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 p-0 order-lg-4 col-md-6 order-md-4">
-                            <div class="service__item deep-bg">
-                                <img src="img/services/service-4.png" alt="">
-                                <h4>DJ lessons</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 p-0 order-lg-3 col-md-6 order-md-3">
-                            <div class="service__item">
-                                <img src="img/services/service-3.png" alt="">
-                                <h4>Corporate events</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section End -->
 
     <!-- Track Section Begin -->
     <section class="track spad">
@@ -577,139 +513,75 @@
             </div>
         </div>
     </section>
-    <!-- Track Section End -->
-
-    <!-- Youtube Section Begin -->
-    <section class="youtube spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Youtube feed</h2>
-                        <h1>Latest videos</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="youtube__item">
-                        <div class="youtube__item__pic set-bg" data-setbg="img/youtube/youtube-1.jpg">
-                            <a href="https://www.youtube.com/watch?v=yJg-Y5byMMw?autoplay=1" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="youtube__item__text">
-                            <h4>David Guetta Miami Ultra Music Festival 2019</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="youtube__item">
-                        <div class="youtube__item__pic set-bg" data-setbg="img/youtube/youtube-2.jpg">
-                            <a href="https://www.youtube.com/watch?v=K4DyBUG242c?autoplay=1" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="youtube__item__text">
-                            <h4>Martin Garrix (Full live-set) | SLAM!Koningsdag</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="youtube__item">
-                        <div class="youtube__item__pic set-bg" data-setbg="img/youtube/youtube-3.jpg">
-                            <a href="https://www.youtube.com/watch?v=S19UcWdOA-I?autoplay=1" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="youtube__item__text">
-                            <h4>Dimitri Vegas, Steve Aoki & Like Mike’s “3 Are Legend”</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Youtube Section End -->
-
-    <!-- Countdown Section Begin -->
-    <section class="countdown spad set-bg" data-setbg="build/assets/img/w1.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="countdown__text">
-                        <h1>WARUNG KOPI 2024</h1>
-                        <h4>Music festival start in</h4>
-                    </div>
-                    <div class="countdown__timer" id="countdown-time">
-                        <div class="countdown__item">
-                            <span>20</span>
-                            <p>days</p>
-                        </div>
-                        <div class="countdown__item">
-                            <span>45</span>
-                            <p>hours</p>
-                        </div>
-                        <div class="countdown__item">
-                            <span>18</span>
-                            <p>minutes</p>
-                        </div>
-                        <div class="countdown__item">
-                            <span>09</span>
-                            <p>seconds</p>
-                        </div>
-                    </div>
-                    <div class="buy__tickets">
-                        <a href="#" class="primary-btn">Buy tickets</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Countdown Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer spad set-bg" data-setbg="img/footer-bg.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__address">
-                        <ul>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <p>Phone</p>
-                                <h6>1-677-124-44227</h6>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <p>Email</p>
-                                <h6>DJ.Music@gmail.com</h6>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 col-md-6">
-                    <div class="footer__social">
-                        <h2>DJoz</h2>
-                        <div class="footer__social__links">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6">
-                    <div class="footer__newslatter">
-                        <h4>Stay With me</h4>
-                        <form action="#">
-                            <input type="text" placeholder="Email">
-                            <button type="submit"><i class="fa fa-send-o"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<div class="footer__copyright__text">
-				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-			</div>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+  <footer class="text-center text-white" style="background-color: #ce8d00">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="build/pages/profiltapsit.php" class="text-white">Profil Tim</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="https://github.com/faqimuh/TapSit" class="text-white">github</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+           <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="https://www.youtube.com/watch?v=MPJk97POcxs" class="text-white">youtube</a>
+            </h6>
+          </div>
         </div>
-    </footer>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+           TapSit mengembangkan sistem monitoring otomatis 
+           yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan 
+           mikrokontroler ESP32 dan teknologi RFID. 
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="https://github.com/faqimuh/TapSit"
+         >TapSit</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
