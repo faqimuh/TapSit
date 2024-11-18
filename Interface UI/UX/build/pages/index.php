@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,21 +7,21 @@
     <meta name="keywords" content="DJoz, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DJoz | Template</title>
+    <title>TAPSIT COFFE</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../../src/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/css/barfiller.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/nowfont.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/rockville.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../../src/css/style.css" type="text/css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="src/css/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="src/css/css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="src/css/nowfont.css" type="text/css">
+    <link rel="stylesheet" href="src/css/rockville.css" type="text/css">
+    <link rel="stylesheet" href="src/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="src/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="src/css/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
 </head>
 
 <body>
@@ -38,34 +36,28 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="header__logo">
-                        <a href="./index.php"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.php"><img src="build/assets/img/Logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-10">
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.php">Home</a></li>
+                                <!-- <li class="active"><a href="./index.php">Home</a></li>
                                 <li><a href="build/pages/login.php">Admin</a></li>
                                 <li><a href="./discography.html">Discography</a></li>
-                                <li><a href="./tours.html">Tours</a></li>
-                                <li><a href="./videos.html">Videos</a></li>
-                                <li><a href="#">Pages</a>
+                                <li><a href="./tours.html">Tours</a></li> -->
+                                <li><a href="./index.php">Home</a></li>
+                                <!-- <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="build/pages/login.php">About</a></li>
                                         <li><a href="./blog.html">Blog</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="build/pages/login.php">Admin</a></li>
                             </ul>
                         </nav>
-                        <div class="header__right__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -75,17 +67,19 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" data-setbg="img/hero-bg.png">
+    <section class="hero spad set-bg" data-setbg="build/assets/img/curved-images/maps2.jpg">
+    <div class="circle"></div>
+    <div class="circle second-circle"></div>
+    <div class="circle ketiga-circle"></div>
+    <div class="circle keempat-circle"></div>
+    <div class="circle kelima-circle"></div>
+    <div class="circle keenam-circle"></div>
+    <div class="circle ketujuh-circle"></div>
+    <div class="circle kedelapan-circle"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="hero__text">
-                        <span>New single</span>
-                        <h1>Feel the heart beats</h1>
-                        <p>Lore ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br />tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="https://www.youtube.com/watch?v=K4DyBUG242c" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -94,6 +88,102 @@
         </div>
     </section>
     <!-- Hero Section End -->
+    <script>
+    async function fetchMejaData() {
+        const response = await fetch('get_meja.php'); // Ambil data dari PHP
+        const mejaData = await response.json(); // Parse data JSON
+        return mejaData;
+    }
+
+    async function updateCircles() {
+        const mejaData = await fetchMejaData();
+        const circle = document.querySelector('.circle');
+        const secondCircle = document.querySelector('.second-circle');
+        const ketigaCircle = document.querySelector('.ketiga-circle');
+        const keempatCircle = document.querySelector('.keempat-circle');
+        const kelimaCircle = document.querySelector('.kelima-circle');
+        const keenamCircle = document.querySelector('.keenam-circle');
+        const ketujuhCircle = document.querySelector('.ketujuh-circle');
+        const kedelapanCircle = document.querySelector('.kedelapan-circle');
+
+
+        mejaData.forEach(meja => {
+            if (meja.meja === "1") { 
+                if (meja.rfid=="73389603") {
+                    circle.classList.remove('red');
+                    circle.classList.add('green');
+                } else {
+					circle.classList.add('red'); 
+                    circle.classList.remove('green');
+                }
+            } else if (meja.meja === "2") { 
+                if (meja.rfid=="73389603") {
+                    secondCircle.classList.remove('red');
+                    secondCircle.classList.add('green');
+                } else {
+                    secondCircle.classList.add('red'); 
+                    secondCircle.classList.remove('green');
+                }
+            }else if (meja.meja === "3") { // Untuk meja 3
+                if (meja.rfid=="73389603") {
+                    ketigaCircle.classList.remove('red');
+                    ketigaCircle.classList.add('green');
+                } else {
+					ketigaCircle.classList.add('red'); 
+                    ketigaCircle.classList.remove('green');
+                }
+            }else if (meja.meja === "4") { // Untuk meja 3
+                if (meja.rfid=="73389603") {
+                    keempatCircle.classList.remove('red');
+                    keempatCircle.classList.add('green');
+                } else {
+					keempatCircle.classList.add('red'); 
+                    keempatCircle.classList.remove('green');
+                }
+            }else if (meja.meja === "5") { // Untuk meja 3
+                if (meja.rfid=="73389603") {
+                    kelimaCircle.classList.remove('red');
+                    kelimaCircle.classList.add('green');
+                } else {
+					kelimaCircle.classList.add('red'); 
+                    kelimaCircle.classList.remove('green');
+                }
+            }else if (meja.meja === "6") {
+                if (meja.rfid=="73389603") {
+					keenamCircle.classList.remove('red');
+                    keenamCircle.classList.add('green');
+                } else {
+                    
+					keenamCircle.classList.add('red');
+                    keenamCircle.classList.remove('green');
+                }
+            } else if (meja.meja === "7") {
+                if (meja.rfid=="73389603") {
+                    ketujuhCircle.classList.remove('red');
+                    ketujuhCircle.classList.add('green');
+                } else {
+					ketujuhCircle.classList.add('red');
+                    ketujuhCircle.classList.remove('green');
+                }
+            }else if (meja.meja === "8") {
+                if (meja.rfid=="73389603") {
+                    kedelapanCircle.classList.remove('red');
+                    kedelapanCircle.classList.add('green');
+                } else {
+					kedelapanCircle.classList.add('red');
+                    kedelapanCircle.classList.remove('green');
+                }
+            }
+        });
+    }
+
+    // Panggil fungsi untuk mengupdate warna lingkaran setiap 5 detik
+    setInterval(updateCircles, 5000); // Mengupdate setiap 5000 ms (5 detik)
+    // Panggil fungsi untuk mengupdate warna lingkaran
+    updateCircles();
+ 
+</script>
+
 
     <!-- Event Section Begin -->
     <section class="event spad">
@@ -101,7 +191,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Upcoming Events</h2>
+                        <h2>Best seller 2024    </h2>
                     </div>
                 </div>
             </div>
@@ -109,53 +199,53 @@
                 <div class="event__slider owl-carousel">
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-1.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="build/assets/img/c1.jpg">
                                 <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
+                                    <span>IDR 35.00</span>
                                 </div>
                             </div>
                             <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
+                                <h4>Macchhiato Coffe</h4>
+                                <p><i class="fa fa-map-marker"></i> Perpaduan antara kopi dan susu</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-2.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="build/assets/img/4.png">
                                 <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
+                                    <span>IDR 30.000</span>
                                 </div>
                             </div>
                             <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
+                                <h4>Kopi Arabika Mandailing</h4>
+                                <p><i class="fa fa-map-marker"></i> Aroma khas dengan rasa halus dan sedikit asam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-3.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="build/assets/img/5.png">
                                 <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
+                                    <span>IDR 35.000</span>
                                 </div>
                             </div>
                             <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
+                                <h4>Kopi Latte</h4>
+                                <p><i class="fa fa-map-marker"></i> Espresso dengan susu lembut dan busa creamy.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-2.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="build/assets/img/6.png">
                                 <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
+                                    <span>IDR 38.000</span>
                                 </div>
                             </div>
                             <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
+                                <h4>Cappuccino</h4>
+                                <p><i class="fa fa-map-marker"></i> Campuran espresso dan susu panas dengan busa melimpah </p>
                             </div>
                         </div>
                     </div>
@@ -171,18 +261,20 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about__pic">
-                        <img src="img/about/about.png" alt="">
+                        <img src="img/tapsit.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about__text">
                         <div class="section-title">
-                            <h2>DJ Alexandra Rud</h2>
+                            <h2>TAPSIT</h2>
                             <h1>About me</h1>
                         </div>
-                        <p>DJ Rainflow knows how to move your mind, body and soul by delivering tracks that stand out
-                            from the norm. As if this impressive succession of high impact, floor-filling bombs wasn’t
-                            enough to sustain.</p>
+                        <p>Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, 
+                            menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, 
+                            yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan 
+                            di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan 
+                            pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.</p>
                         <a href="#" class="primary-btn">CONTACT ME</a>
                     </div>
                 </div>
@@ -192,7 +284,7 @@
     <!-- About Section End -->
 
     <!-- Services Section Begin -->
-    <section class="services">
+    <!-- <section class="services">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 p-0">
@@ -234,7 +326,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Services Section End -->
 
     <!-- Track Section Begin -->
@@ -244,7 +336,7 @@
                 <div class="col-lg-7">
                     <div class="section-title">
                         <h2>Latest tracks</h2>
-                        <h1>Music podcast</h1>
+                        <h1>Music favorit</h1>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -292,7 +384,7 @@
                             </div>
                         </div>
                         <div class="single_player_container">
-                            <h4>David Guetta Miami Ultra</h4>
+                            <h4>Hello You - Iqbal Ramadhan</h4>
                             <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2"
                                 data-url="music-files/2.mp3"></div>
                             <div class="jp-audio jp_container_2" role="application" aria-label="media player">
@@ -470,7 +562,7 @@
                 </div>
                 <div class="col-lg-5 p-0">
                     <div class="track__pic">
-                        <img src="img/track-right.jpg" alt="">
+                        <img src="build/assets/img/LT2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -479,7 +571,7 @@
     <!-- Track Section End -->
 
     <!-- Youtube Section Begin -->
-    <section class="youtube spad">
+    <!-- <section class="youtube spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -522,16 +614,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Youtube Section End -->
 
     <!-- Countdown Section Begin -->
-    <section class="countdown spad set-bg" data-setbg="img/countdown-bg.jpg">
+    <!-- <section class="countdown spad set-bg" data-setbg="build/assets/img/w1.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="countdown__text">
-                        <h1>Tomorrowland 2020</h1>
+                        <h1>WARUNG KOPI 2024</h1>
                         <h4>Music festival start in</h4>
                     </div>
                     <div class="countdown__timer" id="countdown-time">
@@ -558,57 +650,77 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Countdown Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer spad set-bg" data-setbg="img/footer-bg.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__address">
-                        <ul>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <p>Phone</p>
-                                <h6>1-677-124-44227</h6>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <p>Email</p>
-                                <h6>DJ.Music@gmail.com</h6>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 col-md-6">
-                    <div class="footer__social">
-                        <h2>DJoz</h2>
-                        <div class="footer__social__links">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6">
-                    <div class="footer__newslatter">
-                        <h4>Stay With me</h4>
-                        <form action="#">
-                            <input type="text" placeholder="Email">
-                            <button type="submit"><i class="fa fa-send-o"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<div class="footer__copyright__text">
-				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-			</div>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+  <footer class="text-center text-white" style="background-color: #ce8d00">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="build/pages/profiltapsit.php" class="text-white">Profil Tim</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="https://github.com/faqimuh/TapSit" class="text-white">github</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+           <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="https://www.youtube.com/watch?v=MPJk97POcxs" class="text-white">youtube</a>
+            </h6>
+          </div>
         </div>
-    </footer>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+           TapSit mengembangkan sistem monitoring otomatis 
+           yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan 
+           mikrokontroler ESP32 dan teknologi RFID. 
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="https://github.com/faqimuh/TapSit"
+         >TapSit</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
@@ -628,4 +740,4 @@
 </body>
 
 </html>
-<button onclick="window.location.href='build/pages/login.php'">About</button>
+

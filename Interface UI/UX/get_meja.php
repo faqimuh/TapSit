@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root"; // Ganti dengan username database Anda
-$password = ""; // Ganti dengan password database Anda
-$dbname = "login_db"; // Ganti dengan nama database Anda
+$password = "TapSit"; // Ganti dengan password database Anda
+$dbname = "projiot"; // Ganti dengan nama database Anda
 
 // Buat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Ambil data meja
-$sql = "SELECT meja, rfid FROM test1";
+$sql = "SELECT meja, rfid FROM test2";
 $result = $conn->query($sql);
 
 $mejaData = array();

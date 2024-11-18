@@ -448,96 +448,96 @@ ol {
 }
 
 .circle1 {
-    width: 65px; 
-    height: 65px;
+    width: 93px; 
+    height: 93px;
     border-radius: 50%; 
     position: absolute; 
-    top: 29.5%; 
-    left: 14%; 
+    top: 26%; 
+    left: 23%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle2 {
-    width: 65px; 
-    height: 65px;
+    width: 93px; 
+    height: 93px;
     border-radius: 50%; 
     position: absolute; 
-    top: 29.5%; 
-    left: 32%; 
+    top: 24.8%; 
+    left: 48.5%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle3 {
-    width: 65px; 
-    height: 65px;
+    width: 102px; 
+    height: 102px;
     border-radius: 50%; 
     position: absolute; 
-    top: 34.5%; 
-    left: 55.4%; 
+    top: 29.5%; 
+    left: 83%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle4 {
-    width: 65px; 
-    height: 65px;
+    width: 102px; 
+    height: 102px;
     border-radius: 50%; 
     position: absolute; 
-    top: 56.5%; 
-    left: 55.5%; 
+    top: 53.5%; 
+    left: 83%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle5 {
-    width: 55px; 
-    height: 55px;
+    width: 75px; 
+    height: 75px;
     border-radius: 50%; 
     position: absolute; 
-    top: 64.5%; 
-    left: 42%; 
+    top: 63%; 
+    left: 63.6%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle6 {
-    width: 55px; 
-    height: 55px;
+    width: 75px; 
+    height: 75px;
     border-radius: 50%; 
     position: absolute; 
-    top: 64.5%; 
-    left: 37%; 
+    top: 63%; 
+    left: 56.5%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle7 {
-    width: 55px; 
-    height: 55px;
+    width: 75px; 
+    height: 75px;
     border-radius: 50%; 
     position: absolute; 
-    top: 64.5%; 
-    left: 32.5%; 
+    top: 63%; 
+    left: 49.3%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
 }
 
 .circle8 {
-    width: 55px; 
-    height: 55px;
+    width: 75px; 
+    height: 75px;
     border-radius: 50%; 
     position: absolute; 
     top: 64.5%; 
-    left: 27.6%; 
+    left: 42.3%; 
     z-index: 1; 
     background-color: green; /* Default color for empty */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
