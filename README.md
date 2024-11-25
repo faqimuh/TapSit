@@ -171,6 +171,32 @@ Selamat datang di proyek ini. Berikut adalah beberapa panduan yang mungkin Anda 
 | 9   | Lithium 2500mah 3.7V   | 1      | 37.000  | 37.000  |[Buy](https://id.shp.ee/LSUCxvz)                |
 |     |                        |        | **TOTAL** | 154.630 |
 
+# Tampilan UI/UX
+<div align="center">
+  <h3><span style="color:#0078D7;">Tampilan Index</span></h3>
+   <p><i>Menampilkan informasi ketersediaan meja secara real-time, membantu pengguna mengetahui meja yang kosong atau terisi.</i></p>
+  <img src="assets/UI-UX-index.jpg" alt="Index" />
+</div>
+
+<div align="center">
+  <h3>Tampilan Login </h3>
+  <p><i>Halaman login untuk mengamankan akses ke web admin, dirancang khusus agar hanya karyawan atau pemilik yang dapat masuk .</i></p>
+  <img src="assets/UI-UX-login.jpg" alt="Login" />
+</div>
+
+
+<div align="center">
+  <h3> Tampilan Admin </h3>
+  <p><i>
+    Tampilan ini dirancang khusus untuk karyawan atau pemilik yang memiliki akses ke halaman admin. Melalui halaman ini, mereka dapat memantau kondisi meja secara real-time, termasuk informasi apakah meja kosong atau terisi, serta melihat status RFID di setiap meja. Selain itu, halaman ini terdapat pengecekan tingkat baterai alat RFID, yang dikategorikan dalam tiga kondisi: aman, hampir habis, atau habis, guna memastikan perangkat berfungsi dengan optimal. Admin juga memiliki kemampuan untuk mengganti password login sebagai langkah menjaga keamanan akses sistem.
+  </i></p>
+  </i></p>
+  <img src="assets/UI-UX-admin-meja.jpg" alt="Admin - Kondisi Meja" />
+  <img src="assets/UI-UX-admin-kondisi.jpg" alt="Admin - Kondisi Alat" />
+</div>
+
+
+
 # Cara Penggunaan 
 
 https://github.com/user-attachments/assets/884f3dd7-7e4f-4ce1-bf2d-9252606a5dd6
