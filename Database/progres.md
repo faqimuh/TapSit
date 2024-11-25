@@ -44,7 +44,8 @@ Untuk mengirim data yang diterima dari broker MQTT ke database MySQL, ikuti lang
 #### Buat Query SQL untuk Menyimpan Data
 * Sebelum mengirim data ke MySQL, buat tabel di database sesuai data yang akan disimpan. Misalnya, jika data dari broker adalah sensor_id, temperature, dan humidity, buat tabel dengan kolom ini.
 * Dalam node MySQL, masukkan query SQL untuk memasukkan data, misalnya:
-<img src="../assets/cluster.png" /> 
+<img width="254" alt="function creat database" src="https://github.com/user-attachments/assets/b2b92379-5dbb-484b-80eb-91a15a0283f6">
+
 Di mana ? akan digantikan oleh data dari alur kerja Node-Red.
 
 #### Hubungkan Node MQTT dengan Node MySQL
@@ -53,6 +54,7 @@ Di mana ? akan digantikan oleh data dari alur kerja Node-Red.
 #### Jalankan dan Uji Alur Kerja
 * Klik Deploy untuk menjalankan alur kerja.
 * Data yang diterima dari broker MQTT seharusnya sekarang disimpan dalam tabel sensor_data di database MySQL.
+<img width="489" alt="tampilan node-red" src="https://github.com/user-attachments/assets/fd277bfd-45a4-488d-bc90-84901b5e091c">
 
 Dengan konfigurasi ini, Node-Red akan secara otomatis mengambil data dari broker MQTT dan menyimpannya ke dalam database MySQL, memungkinkan pengolahan dan analisis data lebih lanjut.
 
