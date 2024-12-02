@@ -11,7 +11,7 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [Slide Presentasi TapSit](https://www.canva.com/design/DAGSyjQpQgQ/xJnBZW7nx27bsGf2SDqeiA/edit?utm_content=DAGSyjQpQgQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </div>
 
-`WORKSHOP MIKROKONTROLLER - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA`
+`IOT DAN JARINGAN SENSOR - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA`
 
 `DOSEN PENGAMPU : Akhmad Hendriawan ST, MT`
 `NIP. 197501272002121003`
@@ -57,14 +57,17 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
   <img src="./assets/anggota.jpg" alt="LOGO" />
   
-| No.            | Nama                | NRP            | Pembagian Tugas  |Github  |
-| :-------------:| :------------------:| :-------------:| :---------------:|:---------------:|
-| 1              | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github  |https://github.com/faqimuh|
-| 2              | Ahmad Zen Ashari    | 2122600009     | Hardware, Desain Skematik dan Hardware, Publikasi melalui Github |https://github.com/ahmadzenashari|
-| 3              | Fadlan Surya        | 2122600024     | Sofware, Mengatur Koneksi Hardware ke Broker, Publikasi melalui Github |https://github.com/fadlansuryanindita|
-| 4              | Adib Tantowi        | 2122600001     | UI/UX Designer, Membuat tampilan Web Server, Publikasi melalui Github |https://github.com/AdibTantowi|
-| 5              | Rizka Sugiharto     | 2122600008     | Data Analyst, Mengambil data dari Broker ke DataBase, Publikasi melalui Github|https://github.com/Rizka-sgh|
-| 6              | M Lukman Al Khakim  | 2122600010     | Procurement Product, Proses Perakitan dan Soldering, Publikasi melalui Github   |https://github.com/MLukmanhakim10|
+
+
+| No. | Nama                | NRP            | Pembagian Tugas                                                  | GitHub                                 |
+| :--:| :------------------:| :-------------:| :--------------------------------------------------------------:| :------------------------------------: |
+| 1   | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github                       | [GitHub](https://github.com/faqimuh) |
+| 2   | Ahmad Zen Ashari    | 2122600009     | Hardware, Desain Skematik dan Hardware, Publikasi melalui Github| [GitHub](https://github.com/ahmadzenashari) |
+| 3   | Fadlan Surya        | 2122600024     | Software, Mengatur Koneksi Hardware ke Broker, Publikasi melalui Github | [GitHub](https://github.com/fadlansuryanindita) |
+| 4   | Adib Tantowi        | 2122600001     | UI/UX Designer, Membuat tampilan Web Server, Publikasi melalui Github | [GitHub](https://github.com/AdibTantowi) |
+| 5   | Rizka Sugiharto     | 2122600008     | Data Analyst, Mengambil data dari Broker ke DataBase, Publikasi melalui Github | [GitHub](https://github.com/Rizka-sgh) |
+| 6   | M Lukman Al Khakim  | 2122600010     | Procurement Product, Proses Perakitan dan Soldering, Publikasi melalui Github | [GitHub](https://github.com/2122600010-M-Lukman-Alkhakim) |
+
 
 </div>
 
@@ -97,7 +100,8 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 [def0]: /assets/Desain1.png
 [def1]: /assets/Desain2.png
 [def2]: /assets/Desain3.png
-[Download File 3D](https://www.thingiverse.com/thing:6816870)
+[Download File 3D](https://www.thingiverse.com/thing:6816870) <br>
+[File 3D](https://github.com/faqimuh/TapSit/tree/main/Hardware%20Development/Desain3D)
 </div>
 
 
@@ -128,7 +132,7 @@ https://www.thingiverse.com/thing:6816870
   <img src="assets/LAYOUT.png" alt="Layout" width="600px" />
 
 <p> Menggunakan PCB 2 Layer </p>
-
+<a href="https://github.com/faqimuh/TapSit/tree/main/Hardware%20Development/LayoutPCB">FILE PCB</a>
 </div>
 
   ## Pinout yang Dipakai
@@ -194,6 +198,7 @@ Selamat datang di proyek ini. Berikut adalah beberapa panduan yang mungkin Anda 
   </i></p>
   <img src="assets/UI-UX-admin-meja.jpg" alt="Admin - Kondisi Meja" />
   <img src="assets/UI-UX-admin-kondisi.jpg" alt="Admin - Kondisi Alat" />
+  <a href="https://github.com/faqimuh/TapSit/tree/main/Interface%20UI/UX">FILE UI-UX</a>
 </div>
 
 
@@ -210,4 +215,4 @@ https://github.com/user-attachments/assets/884f3dd7-7e4f-4ce1-bf2d-9252606a5dd6
 5. Pada perangkat atau meja yang sama, sistem database hanya akan memperbarui informasi terkait kondisi terakhir RFID serta status pemantauan baterai untuk efisiensi penyimpanan dan pemrosesan data.
 6. Setelah kartu RFID berhasil ditempelkan pada perangkat, tampilan pada web server akan secara otomatis diperbarui, menunjukkan bahwa meja tersebut telah terisi, berkat registrasi yang telah terjadi melalui perangkat.
 
-Untuk memberikan gambaran yang lebih jelas, video ini akan menunjukkan seluruh proses, mulai dari pengaktifan hingga penggunaan alat dalam berbagai kondisi, sehingga Anda bisa memahami manfaat dan efisiensi alat kami yang dapat diakses pada link [berikut ini](https://youtu.be/MPJk97POcxs?si=4I_-UE-o9XQQt0bo)
+Untuk memberikan gambaran yang lebih jelas, video ini akan menunjukkan seluruh proses, mulai dari pengaktifan hingga penggunaan alat dalam berbagai kondisi, sehingga Anda bisa memahami manfaat dan efisiensi alat kami yang dapat diakses pada link [VIDIO IKLAN](https://youtu.be/MPJk97POcxs?si=4I_-UE-o9XQQt0bo)
