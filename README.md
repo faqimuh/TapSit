@@ -8,6 +8,7 @@
 <div align="justify">
 
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
+[Slide Presentasi TapSit](https://www.canva.com/design/DAGSyjQpQgQ/xJnBZW7nx27bsGf2SDqeiA/edit?utm_content=DAGSyjQpQgQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </div>
 
 `WORKSHOP MIKROKONTROLLER - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA`
@@ -56,14 +57,14 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
   <img src="./assets/anggota.jpg" alt="LOGO" />
   
-| No.            | Nama                | NRP            | Pembagian Tugas  |
-| :-------------:| :------------------:| :-------------:| :---------------:|
-| 1              | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github  |
-| 2              | Ahmad Zen Ashari    | 2122600009     | Hardware, Desain Skematik dan Hardware, Publikasi melalui Github |
-| 3              | Fadlan Surya        | 2122600024     | Sofware, Mengatur Koneksi Hardware ke Broker, Publikasi melalui Github |
-| 4              | Adib Tantowi        | 2122600001     | UI/UX Designer, Membuat tampilan Web Server, Publikasi melalui Github |
-| 5              | Rizka Sugiharto     | 2122600008     | Data Analyst, Mengambil data dari Broker ke DataBase, Publikasi melalui Github|
-| 6              | M Lukman Al Khakim  | 2122600010     | Procurement Product, Proses Perakitan dan Soldering, Publikasi melalui Github   |
+| No.            | Nama                | NRP            | Pembagian Tugas  |Github  |
+| :-------------:| :------------------:| :-------------:| :---------------:|:---------------:|
+| 1              | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github  |https://github.com/faqimuh|
+| 2              | Ahmad Zen Ashari    | 2122600009     | Hardware, Desain Skematik dan Hardware, Publikasi melalui Github |https://github.com/ahmadzenashari|
+| 3              | Fadlan Surya        | 2122600024     | Sofware, Mengatur Koneksi Hardware ke Broker, Publikasi melalui Github |https://github.com/fadlansuryanindita|
+| 4              | Adib Tantowi        | 2122600001     | UI/UX Designer, Membuat tampilan Web Server, Publikasi melalui Github |https://github.com/AdibTantowi|
+| 5              | Rizka Sugiharto     | 2122600008     | Data Analyst, Mengambil data dari Broker ke DataBase, Publikasi melalui Github|https://github.com/Rizka-sgh|
+| 6              | M Lukman Al Khakim  | 2122600010     | Procurement Product, Proses Perakitan dan Soldering, Publikasi melalui Github   |https://github.com/MLukmanhakim10|
 
 </div>
 
