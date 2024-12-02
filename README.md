@@ -8,6 +8,7 @@
 <div align="justify">
 
 Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memantau ketersediaan tempat duduk di kafe dan restoran, menggunakan mikrokontroler ESP32 dan teknologi RFID. Sistem ini memungkinkan pelanggan untuk memilih meja dengan mengetuk kartu RFID, yang secara instan memperbarui status meja. Data yang dikumpulkan oleh cloud server disimpan dalam database lokal dan ditampilkan di monitor kasir, memungkinkan staf untuk melihat meja yang kosong dan terisi. Dengan demikian, sistem ini meningkatkan kenyamanan pelanggan dan efisiensi operasional, serta mengurangi waktu tunggu dan kesalahan.
+[Slide Presentasi TapSit](https://www.canva.com/design/DAGSyjQpQgQ/xJnBZW7nx27bsGf2SDqeiA/edit?utm_content=DAGSyjQpQgQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </div>
 
 `IOT DAN JARINGAN SENSOR - PROGRAM STUDI TEKNIK ELEKTRONIKA - POLITEKNIK ELEKTRONIKA NEGERI SURABAYA`
@@ -56,6 +57,8 @@ Proyek ini bertujuan untuk mengembangkan sistem monitoring otomatis yang memanta
 
   <img src="./assets/anggota.jpg" alt="LOGO" />
   
+
+
 | No. | Nama                | NRP            | Pembagian Tugas                                                  | GitHub                                 |
 | :--:| :------------------:| :-------------:| :--------------------------------------------------------------:| :------------------------------------: |
 | 1   | Muhammad Faqidin    | 2122600013     | Project Manager, Publikasi melalui Github                       | [GitHub](https://github.com/faqimuh) |
